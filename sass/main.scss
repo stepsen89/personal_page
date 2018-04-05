@@ -4,6 +4,7 @@
 @import '_about';
 @import '_footer';
 @import '_education';
+@import '_skills';
 // Reset Browser Settings
 
 *,
@@ -15,7 +16,11 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; // for rem unit - 10px
+  font-size: 50%; // for rem unit - 10px - mobile first (small screen)
+
+  @media only screen and (min-width: 600px){
+    font-size: 62.5%;
+  }
 }
 
 body {

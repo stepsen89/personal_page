@@ -198,6 +198,26 @@
   .background__time {
     justify-self: end; }
 
+.skills {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: min-content min-content; }
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1rem;
+  width: 80%; }
+
+.skill__bar {
+  color: #351313;
+  background-color: #f1f1f1; }
+  .skill__bar-level {
+    color: #fff;
+    background-color: #616141;
+    padding: 4px 8px;
+    text-align: center; }
+
 *,
 *::before,
 *::after {
@@ -207,7 +227,10 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 50%; }
+  @media only screen and (min-width: 600px) {
+    html {
+      font-size: 62.5%; } }
 
 body {
   font-weight: 300;
