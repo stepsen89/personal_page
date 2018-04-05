@@ -1,0 +1,30 @@
+@import '_typography';
+@import '_landing';
+@import '_header';
+
+// Reset Browser Settings
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // for rem unit - 10px
+}
+
+body {
+  font-weight: 300;
+  line-height: 1.6;
+  width: 100%;
+  height: 98vh;
+  font-family: $font-family-gochi;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(7, 90vh);
+}

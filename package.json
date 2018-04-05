@@ -1,0 +1,17 @@
+{
+  "name": "personal_page",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/main.css -w"
+  },
+  "author": "Stephanie Senoner",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.8.3"
+  },
+  "dependencies": {
+    "live-server": "^1.2.0"
+  }
+}
