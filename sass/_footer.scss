@@ -1,0 +1,17 @@
+.footer {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+position: fixed;
+bottom: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.4);
+
+  &__icon {
+    fill: rgb(216, 39, 39);
+    height: 2rem;
+    width: 2rem;
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem;
+  }
+}

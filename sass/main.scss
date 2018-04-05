@@ -2,6 +2,7 @@
 @import '_landing';
 @import '_header';
 @import '_about';
+@import '_footer';
 
 // Reset Browser Settings
 
@@ -22,7 +23,7 @@ body {
   line-height: 1.6;
   width: 100%;
   height: 98vh;
-  font-family: $font-family-gochi;
+  font-family: $font-family-primary;
 }
 
 .container {
