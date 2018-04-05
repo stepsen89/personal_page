@@ -10,80 +10,54 @@
   <link rel="stylesheet" href="/styles/main.css">
   <title> Personal Page Senoner Stephanie </title>
 </head>
-<body>
-  <body class="container">
+<body class="container">
   <header class="header">
     <nav class="header__nav">
       <a class="header__nav-item" href="#about"> About </a>
       <a class="header__nav-item" href="#background"> Background </a>
-      <a class="header__nav-item" href="#about"> Skills </a>
       <a class="header__nav-item" href="#slider"> Portfolio </a>
-      <a class="header__nav-item" href="#footer"> Contact </a>
     </nav>
+    <div class="contact__display">
+      <a href="#test">
+        <svg class="contact__display-icon">
+          <use xlink:href="images/footer_logos.svg#linkedin-logo"></use>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/stephanie-senoner-0b2a3911b/" class="contact__display-link">
+        <svg class="contact__display-icon">
+          <use xlink:href="images/footer_logos.svg#github-logo"></use>
+        </svg>
+      </a>
+      <a href="#twitter" class="contact__display-link">
+        <svg class="contact__display-icon">
+          <use xlink:href="images/footer_logos.svg#twitter-letter-logo"></use>
+        </svg>
+      </a>
+      <a href="#xing" class="contact__display-link">
+        <svg class="contact__display-icon">
+          <use xlink:href="images/footer_logos.svg#xing"></use>
+        </svg>
+      </a>
+    </div>
   </header>
 
-
-<!-- 
-  <section class="cover-main" id="home">
-    <header class="header">
-      <nav class="nav-wrapper">
-        <div class="logo">
-          <a href="#"><img src="/images/white-logo.png" alt="" class="logo"></a></div>
-        <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#work">My Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#slider">Slider</a></li>
-            <li><a href="#footer">Footer</a></li>
-        </ul>
-      </nav>
-    </header> -->
-
-
-
-
-
- <section class="cover-main" id="home"> 
-    <div class="wrapper">
-      <ul id="scene" 
-            data-invert-x="false" 
-            data-invert-y="false"
-            data-scalar-x="7"
-            data-scalar-y="7"
-            data-friction-x="0.1"
-            data-friction-y="0.1"
-            data-origin-x="0.5"
-            data-origin-y="0.5">
-        <li class="layer name" data-depth="0.9"> Your Name Here </li>
-        <li class="layer title" data-depth="0.8"> Your title </li>
-        <li class="layer btn btn-main" data-depth="0.3">
-          <a href="#" class="portfolio-btn"> Portfolio </a>
-          <a href="#" class="contact-btn"> Contact me </a>
-        </li>
-      </ul>
+ <section class="landing" id="landing"> 
+    <div class="landing__container">
+      <div id="landing__scenery">
+        <h1 class="heading-1 landing__name"> Hi. </h1>
+        <p class="landing__title"> Glad to see you </p>
+      </div>
     </div>
-    </section>
+  </section>
 
 
-  <footer class="footer">
-      <svg class="footer__icon">
-        <use xlink:href="images/footer_logos.svg#linkedin-logo"></use>
-      </svg>
-    <a href="https://www.linkedin.com/in/stephanie-senoner-0b2a3911b/" class="footer__link">
-      <svg class="footer__icon">
-        <use xlink:href="images/footer_logos.svg#github-logo"></use>
-      </svg>
-    </a>
-    <a href="#twitter" class="footer__link">
-      <svg class="footer__icon">
-        <use xlink:href="images/footer_logos.svg#twitter-letter-logo"></use>
-      </svg>
-    </a>
-    <a href="#xing" class="footer__link">
-      <svg class="footer__icon">
-        <use xlink:href="images/footer_logos.svg#xing"></use>
-      </svg>
-    </a>
-  </footer>
+
+  <section class="about" id="about">
+      <div class="about__container">
+          <h2 class="heading-2"> About Me </h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A voluptatum expedita, eum fugit culpa natus quasi nesciunt, nobis architecto quisquam, nemo deserunt dolorem tenetur porro ipsa. Excepturi, exercitationem commodi ipsam.</p>
+      </div>
+  </section>
+
 </body>
 </html>

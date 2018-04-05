@@ -6,3 +6,66 @@ $font-family-caveat: 'Caveat', cursive;
 $font-family-qwigley: 'Qwigley', cursive;
 $font-family-kristi: 'Kristi', cursive;
 $font-family-gochi: 'Gochi Hand', cursive;
+
+%heading {
+  font-family: $font-family-caveat;
+  font-weight: 400;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 3.5rem;
+  text-align: center;
+  // margin-bottom: 40px;
+  padding-top: 20px;
+
+
+  &::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: red;
+  margin-top: .8rem;
+  }
+}
+
+.heading-2 {
+  font-size: 7.5rem;
+  line-height: 4rem;
+  position: relative;
+  margin: 2rem auto;
+  text-align: center;
+  display: table;
+
+  &::after {
+    height: .6rem;
+    display: block;
+    content: "";
+    width: 20rem;
+    margin: 3rem auto 0 auto;
+    background-color: #000000;
+  }
+}
+
+.heading-3 {
+  font-family: $font-family-kristi;
+  font-size: 2.4rem;
+  font-style: oblique;
+  text-align:center;
+
+  padding-left: 1.4rem;
+  text-transform: uppercase;
+  justify-self: start;
+}
+
+.heading-4 {
+  font-size: 2rem;
+}
+
+.heading-5 {
+  font-size: 1.8rem;
+}
+
+.heading-6 {
+  font-size: 1.6rem;
+}

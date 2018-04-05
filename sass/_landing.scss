@@ -1,0 +1,39 @@
+/* PARALLAX PAGE STYLES START */
+.landing {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url('../images/hao_bg.jpg');
+  background: url('../images/hao_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    // height: 80vh;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 15rem;
+
+    display: flex;
+    justify-content: center;
+    }
+  
+  &__scenery {
+    margin-top: 10rem;
+  }
+
+  &__name {
+    justify-self: center;
+    font-size: 4rem;
+    line-height: 4.5rem;
+    color: white;
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: rgba(0, 0, 0, .6);
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
