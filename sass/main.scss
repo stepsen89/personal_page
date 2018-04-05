@@ -5,7 +5,9 @@
 @import '_footer';
 @import '_education';
 @import '_skills';
-// Reset Browser Settings
+@import '_quotes';
+@import '_mixins';
+@import '_portfolio';
 
 *,
 *::before,
@@ -16,9 +18,9 @@
 
 html {
   box-sizing: border-box;
-  font-size: 50%; // for rem unit - 10px - mobile first (small screen)
+  font-size: 50%; // for rem unit 1 - 10px - mobile first (small screen)
 
-  @media only screen and (min-width: 600px){
+  @include respond(desktop){
     font-size: 62.5%;
   }
 }
@@ -29,6 +31,14 @@ body {
   width: 100%;
   height: 100vh;
   font-family: $font-family-primary;
+  background-image: url("../images/hao_bg.jpg");
+
+
+  @include respond(desktop) {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 }
 
 .container {
