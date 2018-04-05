@@ -1,10 +1,11 @@
 .about {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/schneider.jpg') no-repeat right bottom / cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/schneider.jpg') no-repeat right bottom / cover;
+    // background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/schneider.jpg') no-repeat right bottom / cover;
+    // background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/schneider.jpg') no-repeat right bottom / cover;
+    background-color: black;
     text-align: center;
     height: 100vh;
     padding: 50px 10px;
-    color: white;
+    color: #bec5d9;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16,10 +17,12 @@
             align-items: center;
     -ms-flex-item-align: center;
         align-self: center;
-  
+    height: 60vh;
+    border-top: 2rem solid #bec5d9;
+
   &__container {
       max-width: 1100px;
-      width: 100%;
+      width: 70%;
       margin: 0 auto;
   }
 }

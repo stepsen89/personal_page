@@ -48,14 +48,13 @@ $font-family-gochi: 'Gochi Hand', cursive;
 }
 
 .heading-3 {
-  font-family: $font-family-kristi;
-  font-size: 2.4rem;
-  font-style: oblique;
-  text-align:center;
-
-  padding-left: 1.4rem;
-  text-transform: uppercase;
-  justify-self: start;
+  font-size: 1.6rem;
+  // font-style: oblique;
+  // text-align:center;
+  padding-top: 1rem;
+  // padding-left: 1.4rem;
+  // text-transform: uppercase;
+  // justify-self: start;
 }
 
 .heading-4 {
