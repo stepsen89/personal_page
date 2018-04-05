@@ -18,19 +18,15 @@
     display: grid;
     grid-template-columns: 30% 70%;
     align-content: center;
-    width: 70%;
+    width: 80%;
   }
 
   &__card-left {
-      width: 15rem;
-      height: 15rem;
-      // float: left;
-      // transform: translateX(-3rem) skewX(12deg);
+      height: 12rem;
       position: relative;
-      overflow: hidden;
       grid-column: 1 / 1;
-      text-align: center;
-      padding-top: 10px;
+      display: grid;
+      grid-template-rows: 90% 10%;
 
   }
 
@@ -39,12 +35,18 @@
     transition: all .5s;
   }
 
-  &__image-title {
-    text-align: center;
-    padding-top: 10px;
+  &__card-right {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-row-gap: .9rem;
   }
 
-  &__card-right {
-    // transform: skewX(12deg);
+  &__card-right-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  &__time {
+    justify-self: end;
   }
 }

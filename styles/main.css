@@ -14,7 +14,7 @@
     margin-top: .8rem; }
 
 .heading-2 {
-  font-size: 7.5rem;
+  font-size: 3.5rem;
   line-height: 4rem;
   position: relative;
   margin: 2rem auto;
@@ -29,11 +29,12 @@
     background-color: #000000; }
 
 .heading-3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   padding-top: 1rem; }
 
 .heading-4 {
-  font-size: 2rem; }
+  font-size: 1.6rem;
+  padding-top: 1rem; }
 
 .heading-5 {
   font-size: 1.8rem; }
@@ -177,21 +178,25 @@
     display: grid;
     grid-template-columns: 30% 70%;
     align-content: center;
-    width: 70%; }
+    width: 80%; }
   .background__card-left {
-    width: 15rem;
-    height: 15rem;
+    height: 12rem;
     position: relative;
-    overflow: hidden;
     grid-column: 1 / 1;
-    text-align: center;
-    padding-top: 10px; }
+    display: grid;
+    grid-template-rows: 90% 10%; }
   .background__image {
     height: 10rem;
     transition: all .5s; }
-  .background__image-title {
-    text-align: center;
-    padding-top: 10px; }
+  .background__card-right {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-row-gap: .9rem; }
+  .background__card-right-container {
+    display: grid;
+    grid-template-columns: 70% 30%; }
+  .background__time {
+    justify-self: end; }
 
 *,
 *::before,
