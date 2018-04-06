@@ -8,6 +8,8 @@
 @import '_quotes';
 @import '_mixins';
 @import '_portfolio';
+@import '_contact';
+@import '_layout';
 
 *,
 *::before,
@@ -31,7 +33,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: $font-family-primary;
-  background-image: url("../images/hao_bg.jpg");
+  // background-image: url("../images/background.jpg");
 
 
   @include respond(desktop) {
@@ -43,5 +45,5 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(7, min-content);
+  grid-template-rows: repeat(6, min-content);
 }

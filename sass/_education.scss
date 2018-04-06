@@ -1,9 +1,11 @@
+@import '_layout';
+
 .background {
     position: relative;
-    padding: 15rem 0;
+    margin-top: 8rem;
+    background-color: $color-primary;
 
   &__card {
-    max-width: 114rem;
     margin: 0 auto;
   }
 

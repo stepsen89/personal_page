@@ -1,7 +1,10 @@
+@import '_layout';
+
 .skills {
   justify-items: center;
   display: grid;
   grid-template-rows: min-content min-content;
+  margin-bottom: $margin-sections;
 }
 
 .skills-container {

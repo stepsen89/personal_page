@@ -1,0 +1,26 @@
+@import '_layout';
+
+.contact {
+  background-color: $color-primary-light;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    &-left {
+      display: grid;
+      grid-template-rows: 30% 20% 50%;
+      grid-row-gap: 2rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+.noteabout100Days {
+  font-size: 1.7rem;
+  color: pink;
+}
