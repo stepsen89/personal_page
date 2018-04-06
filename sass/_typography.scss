@@ -14,7 +14,8 @@ $font-family-gochi: 'Gochi Hand', cursive;
 }
 
 .heading-1 {
-  @extend %heading;
+  line-height: 400;
+  font-family: $font-family-primary;
   font-size: 3.5rem;
   text-align: center;
   // margin-bottom: 40px;

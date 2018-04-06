@@ -11,13 +11,24 @@
     display: grid;
     grid-template-rows: 30% 70%;
     border: .2rem solid transparent;
-    padding-bottom: $margin-sections;
+    padding-bottom: 10rem;
+    height: auto;
+    padding-top: 10rem;
 
+    @include respond(desktop){
+        padding-bottom: $margin-sections;
+
+    }
   &__container {
       display: grid;
       grid-template-columns: 40% 60%;
-      width: 70%;
       margin: 0 auto;
+      padding-left: 3rem;
+      padding-right: 3rem;
+
+      @include respond(desktop){
+        width: 70%;
+      }
   }
 
   &__image {

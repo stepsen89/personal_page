@@ -16,10 +16,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 .heading-1 {
-  font-family: "Caveat", cursive;
-  font-weight: 400; }
-
-.heading-1 {
+  line-height: 400;
+  font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   text-align: center;
   padding-top: 20px; }
@@ -79,9 +77,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     width: 100%; }
   .landing__title {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     line-height: 3.5rem;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(219, 67, 67, 0.6);
     width: 100%;
     margin-top: 2rem; }
 
@@ -185,12 +183,21 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: grid;
   grid-template-rows: 30% 70%;
   border: .2rem solid transparent;
-  padding-bottom: 17rem; }
+  padding-bottom: 10rem;
+  height: auto;
+  padding-top: 10rem; }
+  @media only screen and (min-width: 75em) {
+    .about {
+      padding-bottom: 17rem; } }
   .about__container {
     display: grid;
     grid-template-columns: 40% 60%;
-    width: 70%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-left: 3rem;
+    padding-right: 3rem; }
+    @media only screen and (min-width: 75em) {
+      .about__container {
+        width: 70%; } }
   .about__image {
     align-self: center; }
   .about__text {
