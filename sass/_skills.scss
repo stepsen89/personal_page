@@ -2,9 +2,14 @@
 
 .skills {
   justify-items: center;
+  background-image: url('../images/innsbruck.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-rows: min-content min-content;
-  margin-bottom: $margin-sections;
+  padding-bottom: $margin-sections;
+  padding-top: 3rem;
 }
 
 .skills-container {

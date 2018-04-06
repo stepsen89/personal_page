@@ -119,14 +119,30 @@
 .about {
   background-color: black;
   text-align: center;
-  height: 50rem;
+  height: 40rem;
   color: #bec5d9;
   display: grid;
   grid-template-rows: 30% 70%;
-  border: .2rem solid transparent; }
+  border: .2rem solid transparent;
+  padding-bottom: 17rem; }
   .about__container {
+    display: grid;
+    grid-template-columns: 40% 60%;
     width: 70%;
     margin: 0 auto; }
+  .about__image {
+    align-self: center; }
+  .about__text {
+    align-self: center;
+    text-align: justify;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+
+.personal__image {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: 2px transparent; }
 
 .footer {
   display: grid;
@@ -145,7 +161,7 @@
 
 .background {
   position: relative;
-  margin-top: 8rem;
+  padding-top: 8rem;
   background-color: #FFF; }
   .background__card {
     margin: 0 auto; }
@@ -182,9 +198,14 @@
 
 .skills {
   justify-items: center;
+  background-image: url("../images/innsbruck.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
   grid-template-rows: min-content min-content;
-  margin-bottom: 17rem; }
+  padding-bottom: 17rem;
+  padding-top: 3rem; }
 
 .skills-container {
   display: grid;
@@ -231,7 +252,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .portfolio {
   background: red;
   height: 70rem;
-  margin-bottom: 30rem;
+  padding-bottom: 17rem;
+  padding-top: 17rem;
   justify-items: center;
   display: grid;
   grid-template-rows: min-content min-content; }
@@ -307,7 +329,8 @@ body {
   line-height: 1.6;
   width: 100%;
   height: 100vh;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/hao_bg.jpg"); }
   @media only screen and (max-width: 112.4em) {
     body {
       background-size: cover;

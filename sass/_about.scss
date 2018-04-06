@@ -1,17 +1,40 @@
+@import '_layout';
+
 .about {
     // background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/schneider.jpg') no-repeat right bottom / cover;
     // background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/schneider.jpg') no-repeat right bottom / cover;
     background-color: black;
     text-align: center;
-    height: 50rem;
+    height: 40rem;
     color: #bec5d9;
 
     display: grid;
     grid-template-rows: 30% 70%;
     border: .2rem solid transparent;
+    padding-bottom: $margin-sections;
 
   &__container {
+      display: grid;
+      grid-template-columns: 40% 60%;
       width: 70%;
       margin: 0 auto;
   }
+
+  &__image {
+      align-self: center;
+  }
+
+  &__text {
+      align-self: center;
+      text-align: justify;
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
 }
+
+.personal__image {
+      height: 20rem;
+      width: 20rem;
+      border-radius: 50%;
+      border: 2px transparent;
+  }
