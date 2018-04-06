@@ -304,25 +304,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .quote {
   background-color: transparent; }
   .quote__container-right {
-    background-color: yellow;
+    background-color: transparent;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 20% min-content;
     width: 40%;
     margin-top: -2rem;
     justify-self: left; }
   .quote__container-left {
-    background-color: red;
+    background-color: transparent;
     display: grid;
     grid-template-columns: 20% 80%;
     width: 40%;
     margin-top: -2rem;
     justify-self: left; }
   .quote__text {
-    font-size: 3rem;
+    font-size: 2.4rem;
     filter: brightness(1.5);
     margin-left: -10%;
     z-index: 7;
-    line-height: 3rem; }
+    line-height: 3rem;
+    width: 40rem; }
   .quote__icon-left {
     fill: #e3b888;
     height: 9rem;
