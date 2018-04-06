@@ -432,7 +432,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .portfolio__description {
     font-size: 1.4rem;
     padding-top: 1.5rem;
-    padding-left: 2.4rem; }
+    padding-left: 2.4rem;
+    text-align: justify; }
   .portfolio__button {
     text-align: center;
     border: .2rem solid black; }
