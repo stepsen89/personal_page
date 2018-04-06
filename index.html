@@ -11,10 +11,11 @@
 </head>
 <body class="container">
   <header class="header">
-    <nav class="header__nav">
+    <nav class="header__nav" id="header__nav">
       <a class="header__nav-item" href="#about"> About </a>
       <a class="header__nav-item" href="#background"> Background </a>
       <a class="header__nav-item" href="#slider"> Portfolio </a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="header__nav__icon" onclick="myFunction()">&#9776;</a>
     </nav>
     <div class="contact__display">
       <a href="https://www.linkedin.com/in/stephanie-senoner-0b2a3911b" class="contact__display-link">
@@ -51,12 +52,13 @@
 
   
   <section class="about" id="about">
-    <div class="quote">
-      <svg class="quote__left">
+    <div class="quote__container-left">
+      <svg class="quote__icon-left">
           <use xlink:href="images/quotes.svg#quotes" ></use>
       </svg>
-      <p> I love the way you can think outside of a box</p>
+      <p class="quote__text"> I love the way you can think outside of a box</p>
     </div>
+
     <div class="about__container">
       <div class="about__image">
         <img src="images/profilepic.jpg" alt="Profile Picture" class="personal__image">
@@ -70,6 +72,13 @@
   </section>
 
   <section class="background" id="background">
+    <div class="quote__container-right">
+      <svg class="quote__icon-left">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
+      <p class="quote__text"> I love the way you can think outside of a box </p>
+    </div>
+
     <h2 class="heading-2"> Background </h2>
     <div class="background__card">
         <div class="background__card-container">
@@ -139,6 +148,13 @@
               </p>
           </div>
       </div>
+    </div>
+
+    <div class="quote__container-left">
+      <svg class="quote__icon-left">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
+      <p class="quote__text"> I love the way you can think outside of a box</p>
     </div>
 
   <h2 class="heading-2"> Work Experience </h2>
@@ -292,7 +308,7 @@
           <figcaption class="portfolio__details"> 
             <h2 class="heading-5"> Niubee Project </h2>
             <p class="portfolio__description"> FullStack Project using MEAN (Angular 5) </p>
-            <a href=#" class="portfolio__button"> Go to project </a>
+            <a href="#" class="portfolio__button"> Go to project </a>
           </figcaption>
           
         </div>
@@ -315,7 +331,16 @@
     </div>
 </section>
 
+
 <section class="contact" id="contact">
+
+    <div class="quote__container-left">
+        <svg class="quote__icon-left">
+            <use xlink:href="images/quotes.svg#quotes" ></use>
+        </svg>
+        <p class="quote__text"> I love the way you can think outside of a box</p>
+      </div>
+      
     <div class="contact__container">
       <img src="../images/nikita.jpg" alt="Photo by Damian Zaleski on Unsplash" class="contact__image">
     </div>
@@ -327,7 +352,7 @@
     </div>
 </section>
     
-
+<script src="scripts/main.js"></script>
 
 
 </body>

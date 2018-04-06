@@ -7,6 +7,7 @@ $font-family-qwigley: 'Qwigley', cursive;
 $font-family-kristi: 'Kristi', cursive;
 $font-family-gochi: 'Gochi Hand', cursive;
 
+@import '_mixins';
 %heading {
   font-family: $font-family-caveat;
   font-weight: 400;
@@ -36,6 +37,7 @@ $font-family-gochi: 'Gochi Hand', cursive;
   margin: 2rem auto;
   text-align: center;
   display: table;
+  padding-bottom: 2rem;
 
   &::after {
     height: .3rem;
@@ -44,6 +46,10 @@ $font-family-gochi: 'Gochi Hand', cursive;
     width: 17rem;
     margin: .8rem auto 0 auto;
     background-color: #000000;
+  }
+
+  @include respond(desktop){
+
   }
 }
 

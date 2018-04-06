@@ -1,15 +1,19 @@
 @import '_layout';
+@import '_mixins';
 
 .skills {
   justify-items: center;
   background-image: url('../images/innsbruck.jpg');
-  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
   grid-template-rows: min-content min-content;
   padding-bottom: $margin-sections;
   padding-top: 3rem;
+  
+  @include respond(desktop){
+    background-attachment: fixed;
+  }
 }
 
 .skills-container {
