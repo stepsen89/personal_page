@@ -40,8 +40,9 @@
     &__icon {
       font-size: 3rem;
       text-decoration: none;
-      color: white;
+      color: red;
       padding-left: 1.3rem;
+      z-index: 10;
 
       @include respond(desktop){
         display: none;

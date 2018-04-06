@@ -13,28 +13,28 @@
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(#000, .1);
     background-color: rgba(#fff, .6);
-    border-radius: 3px;
     padding: 4rem;
-    margin-bottom: 3rem;
-    font-size: 1rem;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    align-content: center;
-    width: 80%;
+    
+    @include respond(phone_landscape){
+      border-radius: 3px;
+      width: 80%;
+      grid-template-columns: 30% 70%;
+      margin-bottom: 3rem;
+      font-size: 1rem;
+      display: grid;
+      grid-template-rows: 50% 50%;
+      align-content: center;
+    }
   }
 
   &__card-left {
+    @include respond(phone_landscape){
       height: 12rem;
       position: relative;
       grid-column: 1 / 1;
       display: grid;
       grid-template-rows: 90% 10%;
-
-  }
-
-  &__image {
-    height: 10rem;
-    transition: all .5s;
+    }
   }
 
   &__card-right {
@@ -50,5 +50,22 @@
 
   &__time {
     justify-self: end;
+  }
+
+  &__description {
+    display: none;
+
+    @include respond(phone_landscape){
+      display: block;
+      text-align: justify;
+    }
+  }
+
+  &__location {
+    display: none;
+
+    @include respond(phone_landscape){
+      display: block;
+    }
   }
 }

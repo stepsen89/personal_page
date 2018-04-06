@@ -1,6 +1,6 @@
 .quote {
   background-color: transparent;
-
+  
   &__container-right {
     background-color: transparent;
     display: grid;
@@ -9,7 +9,7 @@
     margin-top: -2rem;
     justify-self: left;
   }
-
+  
   &__container-left {
     background-color: transparent;
     display: grid;
@@ -18,8 +18,9 @@
     margin-top: -2rem;
     justify-self: left;
   }
-
+  
   &__text {
+    font-family: $font-family-gochi;
     font-size: 2.4rem;
     filter: brightness(1.5);
     margin-left: -10%;
