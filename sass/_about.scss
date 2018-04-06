@@ -3,16 +3,14 @@
     // background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/schneider.jpg') no-repeat right bottom / cover;
     background-color: black;
     text-align: center;
-    height: 70vh;
-    padding: 50px 10px;
+    height: 50rem;
     color: #bec5d9;
 
     display: grid;
     grid-template-rows: 30% 70%;
-    border: 2px solid transparent;
+    border: .2rem solid transparent;
 
   &__container {
-      max-width: 1100px;
       width: 70%;
       margin: 0 auto;
   }

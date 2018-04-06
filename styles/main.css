@@ -21,11 +21,11 @@
   text-align: center;
   display: table; }
   .heading-2::after {
-    height: .6rem;
+    height: .3rem;
     display: block;
     content: "";
-    width: 20rem;
-    margin: 3rem auto 0 auto;
+    width: 17rem;
+    margin: .8rem auto 0 auto;
     background-color: #000000; }
 
 .heading-3 {
@@ -119,14 +119,12 @@
 .about {
   background-color: black;
   text-align: center;
-  height: 70vh;
-  padding: 50px 10px;
+  height: 50rem;
   color: #bec5d9;
   display: grid;
   grid-template-rows: 30% 70%;
-  border: 2px solid transparent; }
+  border: .2rem solid transparent; }
   .about__container {
-    max-width: 1100px;
     width: 70%;
     margin: 0 auto; }
 
@@ -232,7 +230,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 .portfolio {
   background: red;
-  height: 80vh;
+  height: 70rem;
   margin-bottom: 30rem;
   justify-items: center;
   display: grid;
@@ -270,9 +268,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding-top: 1.5rem;
     padding-left: 2.4rem; }
   .portfolio__button {
-    border: 2px solid red;
-    text-transform: uppercase;
-    text-align: uppercase; }
+    text-align: center;
+    border: .2rem solid black; }
 
 .contact {
   background-color: #FFE; }

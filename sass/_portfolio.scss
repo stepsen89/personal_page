@@ -1,6 +1,6 @@
 .portfolio {
   background: red;
-  height: 80vh;
+  height: 70rem;
   margin-bottom: 30rem;
   justify-items: center;
   display: grid;
@@ -52,9 +52,8 @@
   }
 
   &__button {
-    border: 2px solid red;
-    text-transform: uppercase;
-    text-align: uppercase;
+    text-align: center;
+    border: .2rem solid black;
   }
 }
 

@@ -38,11 +38,11 @@ $font-family-gochi: 'Gochi Hand', cursive;
   display: table;
 
   &::after {
-    height: .6rem;
+    height: .3rem;
     display: block;
     content: "";
-    width: 20rem;
-    margin: 3rem auto 0 auto;
+    width: 17rem;
+    margin: .8rem auto 0 auto;
     background-color: #000000;
   }
 }
