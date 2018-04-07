@@ -1,20 +1,19 @@
 @import '_mixins';
 
 .portfolio {
-  // background: black;
+  background: #f3f3f3;
   height: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-bottom: 5rem;
   padding-top: 5rem;
-  justify-content: center;
   height: auto;
   
   @include respond(desktop){
     padding-bottom: 17rem;
     padding-top: 17rem;
     display: grid;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: repeat(3, min-content);
     justify-items: center;
   }
   
@@ -29,13 +28,13 @@
   &__container {
     display: grid;
     grid-template-rows: repeat(3, min-content);
-    justify-content: center;
+    padding-bottom: 15rem;
     
     @include respond(desktop){
       width: 80%;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 1rem;
+      grid-template-rows: repeat(3, min-content);
+      grid-row-gap: 1.5rem;
     }
 
     @include respond(big-desktop){
@@ -43,41 +42,25 @@
     }
   }
   &__img {
-    backface-visibility: hidden;
-    transition: all .5s;
-    width: 100%;
-    height: 40rem;
+    width: 80%;
+    height: 30rem;
+    justify-self: center;
   }
 
   &__preview {
-      width: 50rem;
-      position: relative;
-      overflow: hidden;
       padding-bottom: 5rem;
 
       @include respond(desktop){
-        width: 35rem;
         padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
       }
     }
 
-  &__preview:hover &__details {
-    opacity: 1;
-  }
-  
-  &__preview:hover &__img {
-    filter: blur(3px) brightness(80%);
-  }
-
   &__details {
-    position: absolute;
-    top: 20%;
-    color: #fff;
     font-size: 1.7rem;
     text-align: center;
-    opacity: 0;
-    transition: all .5s;
-    backface-visibility: hidden;
     }
 
   &__description {
