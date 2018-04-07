@@ -22,12 +22,14 @@ $font-family-gochi: 'Gochi Hand', cursive;
   padding-top: 20px;
 
 
-  &::after {
-  content: "";
-  height: 1px;
-  display: block;
-  background-color: red;
-  margin-top: .8rem;
+  @include respond(desktop){
+    &::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: red;
+    margin-top: .8rem;
+    }
   }
 }
 
@@ -49,9 +51,6 @@ $font-family-gochi: 'Gochi Hand', cursive;
     background-color: #000000;
   }
 
-  @include respond(desktop){
-
-  }
 }
 
 .heading-3 {
@@ -69,5 +68,5 @@ $font-family-gochi: 'Gochi Hand', cursive;
 }
 
 .heading-6 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }

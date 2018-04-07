@@ -5,43 +5,60 @@
   border: 2px transparent;
   width: 100%;
   position: fixed;
-  display: grid;
-  top: .4rem;
-  grid-template-columns: [nav-start] min-content [nav-end contact-start] 1fr [contact-end];
+  z-index: 4;
   
-  &__nav {
-    left: .5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    padding: .5rem .5rem;
-
+  @include respond(desktop){
     display: grid;
-    grid-template-columns: repeat(5, min-content);
-    justify-content: center;
+    top: .4rem;
+    grid-template-columns: [nav-start] min-content [nav-end contact-start] 1fr [contact-end];
 
+  }
+  &__nav {
+    
+    @include respond(desktop){
+      left: .5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      padding: .5rem .5rem;
+  
+      display: grid;
+      grid-template-columns: repeat(5, min-content);
+      justify-content: center;
+
+    }
     &-responsive {
       position: relative;
 
       & .header__nav__icon {
+        overflow: hidden;
+        position: absolute;
         font-size: 3rem;
         text-decoration: none;
         color: white;
         padding-left: 1.3rem;
       }
       
-      & a {
+      & .header__nav-item {
         float: none;
         display: block;
         text-align: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        background-color: black;
+        overflow: hidden;
+        width: 100%;
       }
     }
   
     &__icon {
-      font-size: 3rem;
+      font-size: 4rem;
       text-decoration: none;
-      color: red;
-      padding-left: 1.3rem;
+      color: #88a6e3;
+      padding-left: 2rem;
       z-index: 10;
 
       @include respond(desktop){
@@ -51,19 +68,19 @@
 
     &-item {
       display: none;
-      padding: 0 1rem;
-      margin-bottom: 0;
-      font-size: 1rem;
-      line-height: 22px;
-      text-decoration: none;
-      color: #88a6e3;
-      cursor: pointer;
-      border-bottom: .2rem solid transparent;
-      padding-bottom: .5rem;
-      transition: .2s;
-      letter-spacing: .2rem;
-
+      
       @include respond(desktop){
+        padding: 0 1rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 22px;
+        text-decoration: none;
+        color: #88a6e3;
+        cursor: pointer;
+        border-bottom: .2rem solid transparent;
+        padding-bottom: .5rem;
+        transition: .2s;
+        letter-spacing: .2rem;
         display: inline-block;
       }
 

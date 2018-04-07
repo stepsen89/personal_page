@@ -21,12 +21,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 3.5rem;
   text-align: center;
   padding-top: 20px; }
-  .heading-1::after {
-    content: "";
-    height: 1px;
-    display: block;
-    background-color: red;
-    margin-top: .8rem; }
+  @media only screen and (min-width: 75em) {
+    .heading-1::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: red;
+      margin-top: .8rem; } }
 
 .heading-2 {
   font-size: 3.5rem;
@@ -56,7 +57,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-size: 1.8rem; }
 
 .heading-6 {
-  font-size: 1.6rem; }
+  font-size: 1.5rem; }
 
 /*
 0 - 600px:      Mobile First - where my styles apply
@@ -122,83 +123,112 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border: 2px transparent;
   width: 100%;
   position: fixed;
-  display: grid;
-  top: .4rem;
-  grid-template-columns: [nav-start] min-content [nav-end contact-start] 1fr [contact-end]; }
-  .header__nav {
-    left: .5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    padding: .5rem .5rem;
-    display: grid;
-    grid-template-columns: repeat(5, min-content);
-    justify-content: center; }
-    .header__nav-responsive {
-      position: relative; }
-      .header__nav-responsive .header__nav__icon {
-        font-size: 3rem;
-        text-decoration: none;
-        color: white;
-        padding-left: 1.3rem; }
-      .header__nav-responsive a {
-        float: none;
-        display: block;
-        text-align: left; }
-    .header__nav__icon {
+  z-index: 4; }
+  @media only screen and (min-width: 75em) {
+    .header {
+      display: grid;
+      top: .4rem;
+      grid-template-columns: [nav-start] min-content [nav-end contact-start] 1fr [contact-end]; } }
+  @media only screen and (min-width: 75em) {
+    .header__nav {
+      left: .5rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      padding: .5rem .5rem;
+      display: grid;
+      grid-template-columns: repeat(5, min-content);
+      justify-content: center; } }
+  .header__nav-responsive {
+    position: relative; }
+    .header__nav-responsive .header__nav__icon {
+      overflow: hidden;
+      position: absolute;
       font-size: 3rem;
       text-decoration: none;
-      color: red;
-      padding-left: 1.3rem;
-      z-index: 10; }
-      @media only screen and (min-width: 75em) {
-        .header__nav__icon {
-          display: none; } }
-    .header__nav-item {
-      display: none;
-      padding: 0 1rem;
-      margin-bottom: 0;
-      font-size: 1rem;
-      line-height: 22px;
+      color: white;
+      padding-left: 1.3rem; }
+    .header__nav-responsive .header__nav-item {
+      float: none;
+      display: block;
+      text-align: left;
+      display: block;
+      color: #f2f2f2;
+      padding: 14px 16px;
       text-decoration: none;
-      color: #88a6e3;
-      cursor: pointer;
-      border-bottom: .2rem solid transparent;
-      padding-bottom: .5rem;
-      transition: .2s;
-      letter-spacing: .2rem; }
-      @media only screen and (min-width: 75em) {
-        .header__nav-item {
-          display: inline-block; } }
-      .header__nav-item:hover {
-        border-bottom: 1px solid #ffffff;
-        filter: brightness(2); }
+      font-size: 17px;
+      background-color: black;
+      overflow: hidden;
+      width: 100%; }
+  .header__nav__icon {
+    font-size: 4rem;
+    text-decoration: none;
+    color: #88a6e3;
+    padding-left: 2rem;
+    z-index: 10; }
+    @media only screen and (min-width: 75em) {
+      .header__nav__icon {
+        display: none; } }
+  .header__nav-item {
+    display: none; }
+    @media only screen and (min-width: 75em) {
+      .header__nav-item {
+        padding: 0 1rem;
+        margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 22px;
+        text-decoration: none;
+        color: #88a6e3;
+        cursor: pointer;
+        border-bottom: .2rem solid transparent;
+        padding-bottom: .5rem;
+        transition: .2s;
+        letter-spacing: .2rem;
+        display: inline-block; } }
+    .header__nav-item:hover {
+      border-bottom: 1px solid #ffffff;
+      filter: brightness(2); }
 
+/*
+0 - 600px:      Mobile First - where my styles apply
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   Desktop
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 .about {
   background-color: black;
-  text-align: center;
-  height: 40rem;
   color: #bec5d9;
-  display: grid;
-  grid-template-rows: 30% 70%;
   border: .2rem solid transparent;
   padding-bottom: 10rem;
   height: auto;
   padding-top: 10rem; }
   @media only screen and (min-width: 75em) {
     .about {
-      padding-bottom: 17rem; } }
-  .about__container {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin: 0 auto;
-    padding-left: 3rem;
-    padding-right: 3rem; }
-    @media only screen and (min-width: 75em) {
-      .about__container {
-        width: 70%; } }
+      text-align: center;
+      padding-bottom: 17rem;
+      display: grid;
+      grid-template-rows: 30% 70%; } }
+  @media only screen and (min-width: 75em) {
+    .about__container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      margin: 0 auto;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      width: 70%; } }
   .about__image {
-    align-self: center; }
+    text-align: center; }
   .about__text {
     align-self: center;
     text-align: justify;
@@ -288,17 +318,20 @@ ORDER: Base + typography > general layout + grid > page layout > components
   justify-items: center;
   display: grid;
   grid-template-rows: min-content min-content;
-  padding-bottom: 17rem;
+  padding-bottom: 5rem;
   padding-top: 3rem; }
   @media only screen and (min-width: 75em) {
     .skills {
+      padding-bottom: 17rem;
       background-attachment: fixed; } }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
   width: 80%; }
+  @media only screen and (min-width: 75em) {
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 1rem; } }
 
 .skill__bar {
   color: #351313;
@@ -309,38 +342,62 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding: 4px 8px;
     text-align: center; }
 
-.quote {
-  background-color: transparent; }
-  .quote__container-right {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 20% min-content;
-    width: 40%;
-    margin-top: -2rem;
-    justify-self: left; }
-  .quote__container-left {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 20% 80%;
-    width: 40%;
-    margin-top: -2rem;
-    justify-self: left; }
-  .quote__text {
-    font-family: "Gochi Hand", cursive;
-    font-size: 2.4rem;
-    filter: brightness(1.5);
-    margin-left: -10%;
-    z-index: 7;
-    line-height: 3rem;
-    width: 40rem; }
-  .quote__icon-left {
-    fill: #e3b888;
-    height: 9rem;
-    width: 15rem;
-    z-index: 2;
-    margin: 1rem;
-    margin-left: 1.5rem;
-    margin-top: -5rem; }
+/*
+0 - 600px:      Mobile First - where my styles apply
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   Desktop
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+.quote__container-right {
+  display: none; }
+  @media only screen and (min-width: 40em) {
+    .quote__container-right {
+      background-color: transparent;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      margin-top: -2rem;
+      justify-self: right;
+      width: 60%; } }
+
+.quote__container-left {
+  display: none; }
+  @media only screen and (min-width: 40em) {
+    .quote__container-left {
+      background-color: transparent;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      margin-top: -2rem;
+      justify-self: left;
+      width: 60%; } }
+
+.quote__text {
+  font-family: "Gochi Hand", cursive;
+  font-size: 2.4rem;
+  filter: brightness(1.5);
+  z-index: 7;
+  line-height: 3rem; }
+
+.quote__icon-left {
+  fill: #e3b888;
+  height: 5rem;
+  width: 15rem;
+  z-index: 2;
+  margin: 1rem;
+  margin-top: -2rem; }
+  @media only screen and (min-width: 40em) {
+    .quote__icon-left {
+      height: 9rem; } }
 
 /*
 0 - 600px:      Mobile First - where my styles apply
@@ -362,13 +419,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .portfolio {
   background: #f3f3f3;
   height: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 5rem;
   padding-top: 5rem;
   height: auto; }
   @media only screen and (min-width: 75em) {
     .portfolio {
+      padding-bottom: 5rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
       padding-bottom: 17rem;
       padding-top: 17rem;
       display: grid;
@@ -376,17 +433,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
       justify-items: center; } }
   @media only screen and (min-width: 112.5em) {
     .portfolio {
-      padding-bottom: 17rem;
-      padding-top: 17rem;
       display: grid;
-      grid-template-rows: min-content min-content;
-      justify-items: center; } }
+      grid-template-rows: min-content min-content; } }
   .portfolio__container {
     display: grid;
-    grid-template-rows: repeat(3, min-content);
-    padding-bottom: 15rem; }
+    grid-template-rows: repeat(3, min-content); }
     @media only screen and (min-width: 75em) {
       .portfolio__container {
+        padding-bottom: 15rem;
         width: 80%;
         display: grid;
         grid-template-rows: repeat(3, min-content);
@@ -399,7 +453,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     height: 30rem;
     justify-self: center; }
   .portfolio__preview {
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    text-align: center; }
     @media only screen and (min-width: 75em) {
       .portfolio__preview {
         padding-bottom: 0;
@@ -410,10 +465,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     font-size: 1.7rem;
     text-align: center; }
   .portfolio__description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-top: 1.5rem;
     padding-left: 2.4rem;
+    padding-right: 2.4rem;
     text-align: justify; }
+    @media only screen and (min-width: 75em) {
+      .portfolio__description {
+        padding-right: 0; } }
   .portfolio__button {
     text-align: center;
     border: .2rem solid black; }

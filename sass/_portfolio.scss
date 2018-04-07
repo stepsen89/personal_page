@@ -3,13 +3,13 @@
 .portfolio {
   background: #f3f3f3;
   height: 100%;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 5rem;
   padding-top: 5rem;
   height: auto;
   
   @include respond(desktop){
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-bottom: 17rem;
     padding-top: 17rem;
     display: grid;
@@ -18,19 +18,16 @@
   }
   
   @include respond(big-desktop){
-    padding-bottom: 17rem;
-    padding-top: 17rem;
     display: grid;
     grid-template-rows: min-content min-content;
-    justify-items: center;
   }
   
   &__container {
     display: grid;
     grid-template-rows: repeat(3, min-content);
-    padding-bottom: 15rem;
     
     @include respond(desktop){
+      padding-bottom: 15rem;
       width: 80%;
       display: grid;
       grid-template-rows: repeat(3, min-content);
@@ -49,6 +46,7 @@
 
   &__preview {
       padding-bottom: 5rem;
+      text-align: center;
 
       @include respond(desktop){
         padding-bottom: 0;
@@ -64,10 +62,15 @@
     }
 
   &__description {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     padding-top: 1.5rem;
     padding-left: 2.4rem;
+    padding-right: 2.4rem;
     text-align: justify;
+
+    @include respond(desktop){
+      padding-right: 0;
+    }
   }
 
   &__button {

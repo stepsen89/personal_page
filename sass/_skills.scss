@@ -8,19 +8,23 @@
   // background-size: cover;
   display: grid;
   grid-template-rows: min-content min-content;
-  padding-bottom: $margin-sections;
+  padding-bottom: 5rem;
   padding-top: 3rem;
   
   @include respond(desktop){
+    padding-bottom: $margin-sections;
     background-attachment: fixed;
   }
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 1rem;
   width: 80%;
+  
+  @include respond(desktop){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+  }
 }
 
 .skill__bar {
