@@ -1,15 +1,17 @@
 @import '_typography';
+@import '_layout';
+
+@import '_mixins';
+
 @import '_landing';
 @import '_header';
 @import '_about';
 @import '_footer';
-@import '_education';
+@import '_background';
 @import '_skills';
 @import '_quotes';
-@import '_mixins';
 @import '_portfolio';
 @import '_contact';
-@import '_layout';
 
 *,
 *::before,
@@ -33,9 +35,9 @@ body {
   width: 100%;
   height: 100vh;
   font-family: $font-family-primary;
-  background-image: url("../images/hao_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  // background-image: url("../images/hao_bg.jpg");
+  // background-size: cover;
+  // background-repeat: no-repeat;
 
 
   @include respond(desktop) {

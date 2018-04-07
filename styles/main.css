@@ -58,9 +58,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .heading-6 {
   font-size: 1.6rem; }
 
+/*
+0 - 600px:      Mobile First - where my styles apply
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   Desktop
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 .landing {
   width: 100%;
-  height: 70vh; }
+  height: 85vh; }
   .landing__container {
     width: 100%;
     margin: 0 auto;
@@ -157,24 +174,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
         border-bottom: 1px solid #ffffff;
         filter: brightness(2); }
 
-.contact__display {
-  display: none; }
-  @media only screen and (min-width: 75em) {
-    .contact__display {
-      display: grid;
-      grid-template-columns: repeat(4, min-content);
-      justify-content: end;
-      top: 0; } }
-  .contact__display-icon {
-    fill: #88a6e3;
-    height: 2rem;
-    width: 2rem;
-    z-index: 2;
-    justify-self: end;
-    margin: 1rem; }
-  .contact__display:last-child {
-    margin-right: 2rem; }
-
 .about {
   background-color: black;
   text-align: center;
@@ -213,19 +212,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   border: 2px transparent; }
 
 .footer {
+  background-color: black;
+  color: white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.4); }
-  .footer__icon {
-    fill: #d82727;
-    height: 2rem;
-    width: 2rem;
-    z-index: 2;
-    justify-self: end;
-    margin: 1rem; }
+  grid-template-rows: min-content min-content;
+  justify-items: center; }
 
 .background {
   position: relative;
@@ -295,9 +286,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 .skills {
   justify-items: center;
-  background-image: url("../images/innsbruck.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   display: grid;
   grid-template-rows: min-content min-content;
   padding-bottom: 17rem;
@@ -371,25 +359,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
-/*
-0 - 600px:      Mobile First - where my styles apply
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800]   Desktop
-1800px + :      Big desktop
-
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
-
-1em = 16px
-*/
 .portfolio {
-  background: black;
   height: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -461,21 +431,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
     border: .2rem solid black; }
 
 .contact {
-  background-color: #FFE; }
-  .contact__container {
-    display: grid;
-    grid-template-columns: 50% 50%; }
-    .contact__container-left {
-      display: grid;
-      grid-template-rows: 30% 20% 50%;
-      grid-row-gap: 2rem; }
-  .contact__image {
-    width: 100%;
-    height: 30rem; }
-
-.noteabout100Days {
-  font-size: 1.7rem;
-  color: pink; }
+  padding: 4rem;
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-row-gap: 2rem;
+  justify-content: center;
+  justify-items: center; }
+  .contact_headline {
+    text-align: center;
+    padding-bottom: 2rem; }
+  .contact__icon {
+    fill: #5a74a8;
+    height: 2.6rem;
+    width: 2.6rem;
+    z-index: 2;
+    justify-self: end;
+    margin: 1rem; }
+  .contact__display {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem; }
 
 *,
 *::before,
@@ -496,10 +471,7 @@ body {
   line-height: 1.6;
   width: 100%;
   height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  background-image: url("../images/hao_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  font-family: "Montserrat", sans-serif; }
   @media only screen and (min-width: 75em) {
     body {
       background-attachment: fixed; } }

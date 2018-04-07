@@ -75,27 +75,3 @@
     }
   }
 }
-
-.contact__display {
-  display: none;
-
-  @include respond(desktop){
-    display: grid;
-    grid-template-columns: repeat(4, min-content);
-    justify-content: end;
-    top: 0;
-  }
-
-  &-icon {
-    fill: #88a6e3;
-    height: 2rem;
-    width: 2rem;
-    z-index: 2;
-    justify-self: end;
-    margin: 1rem;
-  }
-
-  &:last-child {
-    margin-right: 2rem;
-  }
-}
