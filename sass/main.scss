@@ -35,9 +35,9 @@ body {
   width: 100%;
   height: 100vh;
   font-family: $font-family-primary;
-  // background-image: url("../images/hao_bg.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-image: url("../images/hao_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
 
   @include respond(desktop) {
