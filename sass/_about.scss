@@ -21,7 +21,7 @@
     }
   &__container {
       
-      @include respond(desktop){
+      @include respond(phone_landscape){
         display: grid;
         grid-template-columns: 40% 60%;
         margin: 0 auto;

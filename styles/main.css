@@ -188,6 +188,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .header__nav-item:hover {
       border-bottom: 1px solid #ffffff;
       filter: brightness(2); }
+  .header__cv-icon {
+    float: right;
+    fill: #5a74a8;
+    height: 2.6rem;
+    width: 2.6rem;
+    margin: 1rem; }
 
 /*
 0 - 600px:      Mobile First - where my styles apply
@@ -219,7 +225,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding-bottom: 17rem;
       display: grid;
       grid-template-rows: 30% 70%; } }
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 40em) {
     .about__container {
       display: grid;
       grid-template-columns: 40% 60%;
@@ -269,13 +275,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
         display: grid;
         grid-template-rows: 50% 50%;
         align-content: center; } }
-  @media only screen and (min-width: 40em) {
-    .background__card-left {
-      height: 12rem;
-      position: relative;
-      grid-column: 1 / 1;
-      display: grid;
-      grid-template-rows: 90% 10%; } }
   .background__card-right {
     display: grid;
     grid-template-rows: 30% 70%;
@@ -290,12 +289,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @media only screen and (min-width: 40em) {
       .background__description {
         display: block;
-        text-align: justify; } }
+        text-align: justify;
+        font-size: 1.5rem; } }
   .background__location {
     display: none; }
     @media only screen and (min-width: 40em) {
       .background__location {
-        display: block; } }
+        display: block;
+        font-size: 1.5rem; } }
 
 /*
 0 - 600px:      Mobile First - where my styles apply
