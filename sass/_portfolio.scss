@@ -63,10 +63,12 @@
 
   &__description {
     font-size: 1.5rem;
-    padding-top: 1.5rem;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding: 1.5rem 2.4rem 1.5rem;
+    // padding-top: 1.5rem;
+    // padding-left: 2.4rem;
+    // padding-right: 2.4rem;
     text-align: justify;
+    // padding-bottom: 3rem;
 
     @include respond(desktop){
       padding-right: 0;
@@ -75,7 +77,8 @@
 
   &__button {
     text-align: center;
-    border: .2rem solid black;
+    text-decoration: none;
+    color: black;
   }
 }
 

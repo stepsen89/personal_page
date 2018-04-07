@@ -46,7 +46,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     background-color: #000000; }
 
 .heading-3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   padding-top: 1rem; }
 
 .heading-4 {
@@ -281,7 +281,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     grid-row-gap: .9rem; }
   .background__card-right-container {
     display: grid;
-    grid-template-columns: 70% 30%; }
+    grid-template-columns: 60% 40%; }
+    @media only screen and (min-width: 40em) {
+      .background__card-right-container {
+        grid-template-columns: 70% 30%; } }
   .background__time {
     justify-self: end; }
   .background__description {
@@ -317,6 +320,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 .skills {
   justify-items: center;
+  background-color: #fff;
   display: grid;
   grid-template-rows: min-content min-content;
   padding-bottom: 5rem;
@@ -325,23 +329,26 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .skills {
       padding-bottom: 17rem;
       background-attachment: fixed; } }
-
-.skills-container {
-  width: 80%; }
-  @media only screen and (min-width: 75em) {
-    .skills-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 1rem; } }
+  .skills__container {
+    width: 80%; }
+    @media only screen and (min-width: 75em) {
+      .skills__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem; } }
 
 .skill__bar {
   color: #351313;
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  height: 2rem; }
   .skill__bar-level {
-    color: #fff;
     background-color: #616141;
     padding: 4px 8px;
-    text-align: center; }
+    text-align: center;
+    height: 2rem; }
+
+.skill__name {
+  font-size: 1.5rem; }
 
 /*
 0 - 600px:      Mobile First - where my styles apply
@@ -369,7 +376,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       grid-template-columns: 20% 80%;
       margin-top: -2rem;
       justify-self: right;
-      width: 60%; } }
+      width: 40%; } }
 
 .quote__container-left {
   display: none; }
@@ -395,7 +402,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   width: 15rem;
   z-index: 2;
   margin: 1rem;
-  margin-top: -2rem; }
+  margin-top: -5rem;
+  margin-left: 5rem; }
   @media only screen and (min-width: 40em) {
     .quote__icon-left {
       height: 9rem; } }
@@ -467,16 +475,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
     text-align: center; }
   .portfolio__description {
     font-size: 1.5rem;
-    padding-top: 1.5rem;
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    padding: 1.5rem 2.4rem 1.5rem;
     text-align: justify; }
     @media only screen and (min-width: 75em) {
       .portfolio__description {
         padding-right: 0; } }
   .portfolio__button {
     text-align: center;
-    border: .2rem solid black; }
+    text-decoration: none;
+    color: black; }
 
 .contact {
   padding: 4rem;
