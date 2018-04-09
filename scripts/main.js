@@ -1,4 +1,4 @@
-function myFunction() {
+function navBar() {
   var x = document.getElementById("header__nav");
   if (x.className === "header__nav") {
       x.className += " header__nav-responsive";

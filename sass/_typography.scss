@@ -65,8 +65,14 @@ $font-family-gochi: 'Gochi Hand', cursive;
 
 .heading-5 {
   font-size: 1.8rem;
+  
+  @include respond(desktop){
+    text-align: left;
+    padding-left: 2.4rem;
+  }
 }
 
 .heading-6 {
   font-size: 1.5rem;
+  padding-top: 1.5rem;
 }

@@ -40,8 +40,17 @@
   }
   &__img {
     width: 80%;
-    height: 30rem;
+    height: 25rem;
     justify-self: center;
+
+    @include respond(phone_landscape){
+      height: 30rem;
+      width: 50%;
+    }
+
+    @include respond(desktop) {
+      width: 70%;
+    }
   }
 
   &__preview {
@@ -58,7 +67,7 @@
 
   &__details {
     font-size: 1.7rem;
-    text-align: center;
+    // text-align: center;
     }
 
   &__description {
@@ -69,9 +78,11 @@
     // padding-right: 2.4rem;
     text-align: justify;
     // padding-bottom: 3rem;
+    padding-bottom: 3rem;
 
     @include respond(desktop){
       padding-right: 0;
+      
     }
   }
 
