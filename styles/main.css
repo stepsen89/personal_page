@@ -178,7 +178,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     display: none; }
     .header__nav-item:first-child {
       display: block; }
-    @media only screen and (min-width: 75em) {
+      @media only screen and (min-width: 56.25em) {
+        .header__nav-item:first-child {
+          display: none; } }
+    @media only screen and (min-width: 56.25em) {
       .header__nav-item {
         padding: 0 1rem;
         margin-bottom: 0;

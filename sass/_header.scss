@@ -74,9 +74,13 @@
 
       &:first-child{
         display: block;
+
+        @include respond(tab-land){
+          display: none;
+        }
       }
       
-      @include respond(desktop){
+      @include respond(tab-land){
         padding: 0 1rem;
         margin-bottom: 0;
         font-size: 1rem;
