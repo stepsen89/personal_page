@@ -202,7 +202,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         border-bottom: transparent; }
   .header__cv-icon {
     float: right;
-    fill: #5a74a8;
+    fill: #88a6e3;
     height: 2.6rem;
     width: 2.6rem;
     margin: 1rem; }
@@ -354,7 +354,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background-color: #f1f1f1;
   height: 2rem; }
   .skill__bar-level {
-    background-color: #616141;
+    background-color: #88a6e3;
     padding: 4px 8px;
     text-align: center;
     height: 2rem; }
@@ -502,7 +502,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .portfolio__button {
     text-align: center;
     text-decoration: none;
-    color: black; }
+    color: #88a6e3; }
 
 .contact {
   padding: 4rem;
@@ -515,7 +515,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     text-align: center;
     padding-bottom: 2rem; }
   .contact__icon {
-    fill: #5a74a8;
+    fill: #88a6e3;
     height: 2.6rem;
     width: 2.6rem;
     z-index: 2;
