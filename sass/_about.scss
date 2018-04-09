@@ -33,13 +33,17 @@
 
   &__image {
       text-align: center;
+
+      @include respond(desktop){
+        align-self: center;
+      }
   }
 
   &__text {
       align-self: center;
       text-align: justify;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
   }
 }
 

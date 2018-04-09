@@ -183,18 +183,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
           display: none; } }
     @media only screen and (min-width: 56.25em) {
       .header__nav-item {
-        padding: 0 1rem;
         margin-bottom: 0;
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 22px;
         text-decoration: none;
         color: #88a6e3;
         cursor: pointer;
         border-bottom: .2rem solid transparent;
-        padding-bottom: .5rem;
         transition: .2s;
         letter-spacing: .2rem;
-        display: inline-block; } }
+        display: inline-block;
+        padding: 1rem; } }
     .header__nav-item:hover {
       border-bottom: 1px solid #ffffff;
       filter: brightness(2); }
@@ -247,11 +246,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
       width: 70%; } }
   .about__image {
     text-align: center; }
+    @media only screen and (min-width: 75em) {
+      .about__image {
+        align-self: center; } }
   .about__text {
     align-self: center;
     text-align: justify;
-    padding-left: 2rem;
-    padding-right: 2rem; }
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; }
 
 .personal__image {
   height: 20rem;
@@ -340,7 +342,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @media only screen and (min-width: 75em) {
     .skills {
       padding-bottom: 17rem;
-      background-attachment: fixed; } }
+      background-attachment: fixed;
+      padding-bottom: 3rem; } }
   .skills__container {
     width: 80%; }
     @media only screen and (min-width: 75em) {
@@ -388,7 +391,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
       grid-template-columns: 20% 80%;
       margin-top: -2rem;
       justify-self: right;
-      width: 40%; } }
+      width: 50%;
+      padding-bottom: 4rem;
+      padding-top: 4rem; } }
 
 .quote__container-left {
   display: none; }
@@ -399,17 +404,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
       grid-template-columns: 20% 80%;
       margin-top: -2rem;
       justify-self: left;
-      width: 60%; } }
+      width: 50%;
+      padding-bottom: 4rem;
+      padding-top: 4rem; } }
 
 .quote__text {
-  font-family: "Gochi Hand", cursive;
   font-size: 2.4rem;
   filter: brightness(1.5);
   z-index: 7;
   line-height: 3rem; }
 
 .quote__icon-left {
-  fill: #e3b888;
+  fill: #88a6e3;
   height: 5rem;
   width: 15rem;
   z-index: 2;
@@ -447,8 +453,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding-bottom: 5rem;
       padding-left: 2rem;
       padding-right: 2rem;
-      padding-bottom: 17rem;
-      padding-top: 17rem;
+      padding-bottom: 5rem;
+      padding-top: 5rem;
       display: grid;
       grid-template-rows: repeat(3, min-content);
       justify-items: center; } }

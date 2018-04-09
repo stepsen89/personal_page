@@ -10,7 +10,9 @@
       grid-template-columns: 20% 80%;
       margin-top: -2rem;
       justify-self: right;
-      width: 40%;
+      width: 50%;
+      padding-bottom: 4rem;
+      padding-top: 4rem;
     }
   }
   
@@ -23,12 +25,13 @@
       grid-template-columns: 20% 80%;
       margin-top: -2rem;
       justify-self: left;
-      width: 60%;
+      width: 50%;
+      padding-bottom: 4rem;
+      padding-top: 4rem;
     }
   }
   
   &__text {
-    font-family: $font-family-gochi;
     font-size: 2.4rem;
     filter: brightness(1.5);
     z-index: 7;
@@ -37,7 +40,7 @@
   }
 
   &__icon-left {
-    fill: #e3b888;
+    fill: #88a6e3;
     height: 5rem;
     width: 15rem;
     z-index: 2;
