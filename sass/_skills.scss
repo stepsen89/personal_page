@@ -10,9 +10,7 @@
   padding-top: 3rem;
   
   @include respond(desktop){
-    padding-bottom: $margin-sections;
-    background-attachment: fixed;
-    padding-bottom: 3rem;
+    padding-bottom: 10rem;
   }
 
   
@@ -35,7 +33,7 @@
     
     &-level {
       background-color:#88a6e3;
-      padding: 4px 8px; //change
+      padding: 0.4rem 0.8rem;
       text-align:center;
       height: 2rem;
     } 

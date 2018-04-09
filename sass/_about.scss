@@ -2,8 +2,6 @@
 @import '_mixins';
 
 .about {
-    // background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../images/schneider.jpg') no-repeat right bottom / cover;
-    // background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/schneider.jpg') no-repeat right bottom / cover;
     background-color: black;
     color: #bec5d9;
     
@@ -12,7 +10,7 @@
     height: auto;
     padding-top: 10rem;
     
-    @include respond(desktop){
+    @include respond(tab-port){
         text-align: center;
         padding-bottom: $margin-sections;
         display: grid;
@@ -34,7 +32,7 @@
   &__image {
       text-align: center;
 
-      @include respond(desktop){
+      @include respond(tab-port){
         align-self: center;
       }
   }
@@ -51,5 +49,5 @@
       height: 20rem;
       width: 20rem;
       border-radius: 50%;
-      border: 2px transparent;
+      border: 0.2rem transparent;
   }

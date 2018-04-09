@@ -16,7 +16,7 @@
     padding: 4rem;
     
     @include respond(phone_landscape){
-      border-radius: 3px;
+      border-radius: .3rem;
       width: 80%;
       grid-template-columns: 30% 70%;
       margin-bottom: 3rem;

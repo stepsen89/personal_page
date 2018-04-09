@@ -20,11 +20,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   font-family: "Montserrat", sans-serif;
   font-size: 3.5rem;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 2rem; }
   @media only screen and (min-width: 75em) {
     .heading-1::after {
       content: "";
-      height: 1px;
+      height: .1rem;
       display: block;
       background-color: red;
       margin-top: .8rem; } }
@@ -125,7 +125,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 /* NAVIGATION BAR + HEADER STYLE START */
 .header {
-  border: 2px transparent;
+  border: 0.2rem transparent;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: fixed;
@@ -138,7 +138,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   @media only screen and (min-width: 75em) {
     .header__nav {
       left: .5rem;
-      max-width: 1200px;
       margin: 0 auto;
       position: relative;
       padding: .5rem .5rem;
@@ -185,7 +184,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       .header__nav-item {
         margin-bottom: 0;
         font-size: 1.5rem;
-        line-height: 22px;
+        line-height: 2.2rem;
         text-decoration: none;
         color: #88a6e3;
         cursor: pointer;
@@ -195,7 +194,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
         display: inline-block;
         padding: 1rem; } }
     .header__nav-item:hover {
-      border-bottom: 1px solid #ffffff;
+      border-bottom: .1rem solid #ffffff;
       filter: brightness(2); }
       .header__nav-item:hover:first-child {
         border-bottom: transparent; }
@@ -230,7 +229,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-bottom: 10rem;
   height: auto;
   padding-top: 10rem; }
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 37.5em) {
     .about {
       text-align: center;
       padding-bottom: 17rem;
@@ -246,7 +245,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       width: 70%; } }
   .about__image {
     text-align: center; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 37.5em) {
       .about__image {
         align-self: center; } }
   .about__text {
@@ -259,7 +258,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 20rem;
   width: 20rem;
   border-radius: 50%;
-  border: 2px transparent; }
+  border: 0.2rem transparent; }
 
 .footer {
   background-color: black;
@@ -281,7 +280,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     padding: 4rem; }
     @media only screen and (min-width: 40em) {
       .background__card-container {
-        border-radius: 3px;
+        border-radius: .3rem;
         width: 80%;
         grid-template-columns: 30% 70%;
         margin-bottom: 3rem;
@@ -341,9 +340,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding-top: 3rem; }
   @media only screen and (min-width: 75em) {
     .skills {
-      padding-bottom: 17rem;
-      background-attachment: fixed;
-      padding-bottom: 3rem; } }
+      padding-bottom: 10rem; } }
   .skills__container {
     width: 80%; }
     @media only screen and (min-width: 75em) {
@@ -358,7 +355,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 2rem; }
   .skill__bar-level {
     background-color: #88a6e3;
-    padding: 4px 8px;
+    padding: 0.4rem 0.8rem;
     text-align: center;
     height: 2rem; }
 
@@ -388,7 +385,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .quote__container-right {
       background-color: transparent;
       display: grid;
-      grid-template-columns: 20% 80%;
+      grid-template-columns: 20% 60% 20%;
       margin-top: -2rem;
       justify-self: right;
       width: 50%;
@@ -401,7 +398,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .quote__container-left {
       background-color: transparent;
       display: grid;
-      grid-template-columns: 20% 80%;
+      grid-template-columns: 20% 60% 20%;
       margin-top: -2rem;
       justify-self: left;
       width: 50%;
@@ -426,6 +423,17 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .quote__icon-left {
       height: 9rem; } }
 
+.quote__icon-right {
+  fill: #88a6e3;
+  height: 5rem;
+  width: 15rem;
+  z-index: 2;
+  transform: rotate(180deg);
+  margin-left: -6rem; }
+  @media only screen and (min-width: 40em) {
+    .quote__icon-right {
+      height: 9rem; } }
+
 /*
 0 - 600px:      Mobile First - where my styles apply
 600 - 900px:    Tablet portrait
@@ -448,12 +456,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   height: 100%;
   padding-top: 5rem;
   height: auto; }
-  @media only screen and (min-width: 75em) {
+  @media only screen and (min-width: 37.5em) {
     .portfolio {
       padding-bottom: 5rem;
       padding-left: 2rem;
       padding-right: 2rem;
-      padding-bottom: 5rem;
+      padding-bottom: 17rem;
       padding-top: 5rem;
       display: grid;
       grid-template-rows: repeat(3, min-content);
@@ -465,12 +473,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
   .portfolio__container {
     display: grid;
     grid-template-rows: repeat(3, min-content); }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 37.5em) {
       .portfolio__container {
         padding-bottom: 15rem;
         width: 80%;
-        display: grid;
-        grid-template-rows: repeat(3, min-content);
         grid-row-gap: 1.5rem; } }
     @media only screen and (min-width: 112.5em) {
       .portfolio__container {
@@ -483,13 +489,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
       .portfolio__img {
         height: 30rem;
         width: 50%; } }
+    @media only screen and (min-width: 56.25em) {
+      .portfolio__img {
+        width: auto; } }
     @media only screen and (min-width: 75em) {
       .portfolio__img {
         width: 70%; } }
   .portfolio__preview {
     padding-bottom: 5rem;
     text-align: center; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 56.25em) {
       .portfolio__preview {
         padding-bottom: 0;
         display: grid;

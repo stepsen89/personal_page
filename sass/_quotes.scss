@@ -7,7 +7,7 @@
     @include respond(phone_landscape){
       background-color: transparent;
       display: grid;
-      grid-template-columns: 20% 80%;
+      grid-template-columns: 20% 60% 20%;
       margin-top: -2rem;
       justify-self: right;
       width: 50%;
@@ -22,7 +22,7 @@
     @include respond(phone_landscape){
       background-color: transparent;
       display: grid;
-      grid-template-columns: 20% 80%;
+      grid-template-columns: 20% 60% 20%;
       margin-top: -2rem;
       justify-self: left;
       width: 50%;
@@ -36,7 +36,6 @@
     filter: brightness(1.5);
     z-index: 7;
     line-height: 3rem;
-    // width: 80%;
   }
 
   &__icon-left {
@@ -47,6 +46,19 @@
     margin: 1rem;
     margin-top: -5rem;
     margin-left: 5rem;
+
+    @include respond(phone_landscape){
+      height: 9rem;
+    }
+  }
+
+  &__icon-right {
+    fill: #88a6e3;
+    height: 5rem;
+    width: 15rem;
+    z-index: 2;
+    transform: rotate(180deg);
+    margin-left: -6rem;
 
     @include respond(phone_landscape){
       height: 9rem;

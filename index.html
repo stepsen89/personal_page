@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Content and design copyright Senoner Stephanie, 2018 -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Junior Front-End-Developer, Stephanie Senoner, Personal Page, HTML, CSS, SASS, JavaScript, React">
+  <meta name="description" content="Personal website Senoner Stephanie">
+  <meta name="author" content="Stephanie Senoner">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117137793-1"></script>
   <script>
@@ -23,7 +28,7 @@
 <body class="container">
   <header class="header">
     <nav class="header__nav" id="header__nav">
-      <a href="javascript:void(0);" class="header__nav__icon header__nav-item" onclick="navBar()">&#9776;</a>
+      <a class="header__nav__icon header__nav-item" onclick="navBar()">&#9776;</a>
       <a class="header__nav-item" href="#about"> About </a>
       <a class="header__nav-item" href="#background"> Background </a>
       <a class="header__nav-item" href="#portfolio"> Portfolio </a>
@@ -46,6 +51,9 @@
         <use xlink:href="images/quotes.svg#quotes" ></use>
       </svg>
       <p class="quote__text"> Creative, passionate about web technologies </p>
+      <svg class="quote__icon-right">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
     </div>
     
     <div class="about__container">
@@ -66,6 +74,9 @@
         <use xlink:href="images/quotes.svg#quotes" ></use>
       </svg>
       <p class="quote__text"> Through my trips around the world I am highly adaptive and curious about working in an international environment </p>
+      <svg class="quote__icon-right">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
     </div>
     
     <h2 class="heading-2"> Background </h2>
@@ -140,7 +151,10 @@
       <svg class="quote__icon-left">
         <use xlink:href="images/quotes.svg#quotes" ></use>
       </svg>
-      <p class="quote__text"> Creative, passionate about web technologies </p>
+      <p class="quote__text"> I am always trying to learn new things and constantly improving my skills </p>
+      <svg class="quote__icon-right">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
     </div>
               
     <h2 class="heading-2"> Work Experience </h2>
@@ -199,6 +213,17 @@
   </section>
                       
   <section class="skills" id="skills">
+
+  <div class="quote__container-left">
+    <svg class="quote__icon-left">
+      <use xlink:href="images/quotes.svg#quotes" ></use>
+    </svg>
+    <p class="quote__text"> Problem solving and critical thinking are part of my strengths </p>
+    <svg class="quote__icon-right">
+        <use xlink:href="images/quotes.svg#quotes" ></use>
+    </svg>
+  </div>
+
     <h2 class="heading-2"> Skills </h2>
     
     <div class="skills__container">
@@ -290,7 +315,11 @@
         <use xlink:href="images/quotes.svg#quotes" ></use>
       </svg>
       <p class="quote__text"> In my projects I try to combine aspects of psychology and work with the latest technologies</p>
+      <svg class="quote__icon-right">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
     </div>
+
     <h2 class="heading-2"> My Portfolio </h2>
     
     <div class="portfolio__container">
@@ -309,14 +338,15 @@
         </div>
         <div class="portfolio__details"> 
           <h3 class="heading-5"> Niubee Project </h3>
-          <p class="portfolio__description"> Niubee aims to be an online platform for 'Niubees' (a person who recently moved to another city). Locals can register and share their own secrets (spots they like beside tourist spots), so Niubees can have a better, personal view of the new city they now live in. This game is purely made with Node.js, Express, JavaScript, and SASS/SCSS. </p>
+          <p class="portfolio__description"> Niubee aims to be an online platform for 'Niubees' (a person who recently moved to another city). Locals can register and share their own secrets (spots they like beside tourist spots), so Niubees can have a better, personal view of the new city they now live in. This project
+           is purely made with Node.js, Express, JavaScript, and SASS/SCSS. </p>
           <a href="https://city-secrets.herokuapp.com/" class="portfolio__button"> Go to project </a>
         </div>
       </div>
       
       <div class="portfolio__preview">
         <img src="../images/codingpaul.png" alt="Coding Paul Project One" class="portfolio__img" />
-        <div class="portfolio__details"> Coding Paul 
+        <div class="portfolio__details"> 
           <h3 class="heading-5"> Coding Paul  </h3>
           <p class="portfolio__description"> Coding Paul is an online arcade game made in HTML, Canvas, CSS and pure JavaScript. The aim of the game is to learn coding via playing. 'Paul' has to collect code snippets and avoid 'bugs'. </p>
           <a href="https://stepsen89.github.io/Project_One/" class="portfolio__button"> Go to project </a>
@@ -328,7 +358,10 @@
       <svg class="quote__icon-left">
         <use xlink:href="images/quotes.svg#quotes" ></use>
       </svg>
-      <p class="quote__text"> I am really looking forward to hear from you </p>
+      <p class="quote__text"> I am really looking forward to hearing from you </p>
+      <svg class="quote__icon-right">
+          <use xlink:href="images/quotes.svg#quotes" ></use>
+      </svg>
     </div>
   </section>
   
@@ -336,7 +369,7 @@
     <div class="contact">
       <h3 class="heading-3 contact_headline"> Contact / Impressum </h3>
       <div class="contact__mail">
-        <p> contact@stephaniesenoner.com </p>
+        <p> stephanie.senoner@gmail.com </p>
       </div>
       <div class="contact__display">
         <a href="/Senoner_CV.pdf" class="header__cv" download>
