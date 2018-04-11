@@ -1,18 +1,20 @@
 .landing {
   width: 100%;
   height: 90vh;
+  background-color: rgba(0, 0, 0, 0.4);
 
   &__container {
     width: 100%;
     margin: 0 auto;
-    padding-top: 45rem;
+    padding-top: 35rem;
+    padding-left: 2rem;
 
     display: flex;
-    justify-content: center;
+    justify-content: start
     }
   
   &__scenery {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 
   &__name {
