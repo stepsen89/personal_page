@@ -43,7 +43,7 @@
 
     @include respond(phone_landscape){
       height: 30rem;
-      width: 50%;
+      // width: 50%;
     }
 
     @include respond(tab-land){
