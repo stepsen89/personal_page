@@ -74,6 +74,36 @@
     width: 100%;
     margin-top: 2rem; }
 
+.wrapper {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%; }
+
+.logo {
+  stroke: #000;
+  fill: #000;
+  stroke-dasharray: 1800;
+  opacity: 10;
+  animation: animate 2s cubic-bezier(0, 0.23, 1, 1); }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1800; }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1800; }
+  90% {
+    fill: rgba(0, 0, 0, 0); }
+  100% {
+    opacity: 10;
+    fill: black;
+    stroke-dashoffset: 0; } }
+
 /* NAVIGATION BAR + HEADER STYLE START */
 .header {
   border: 0.2rem transparent;
@@ -370,8 +400,7 @@
     justify-self: center; }
     @media only screen and (min-width: 40em) {
       .portfolio__img {
-        height: 30rem;
-        width: 50%; } }
+        height: 30rem; } }
     @media only screen and (min-width: 56.25em) {
       .portfolio__img {
         width: auto; } }
@@ -444,9 +473,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
-  background-image: url("../images/hao_bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-color: #88a6e3; }
   @media only screen and (min-width: 75em) {
     body {
       background-attachment: fixed; } }
