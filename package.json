@@ -12,7 +12,9 @@
     "node-sass": "^4.9.3"
   },
   "dependencies": {
+    "browsersync": "0.0.1-security",
     "bulma": "^0.7.1",
+    "gulp": "^3.9.1",
     "live-server": "^1.2.0"
   }
 }
