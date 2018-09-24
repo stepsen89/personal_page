@@ -9,9 +9,10 @@
   "author": "Stephanie Senoner",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.9.3"
   },
   "dependencies": {
+    "bulma": "^0.7.1",
     "live-server": "^1.2.0"
   }
 }
