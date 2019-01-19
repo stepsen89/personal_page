@@ -4,7 +4,7 @@
   "description": "Personal Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss styles/main.css -w"
+    "compile:sass": "node-sass sass/main.scss styles/main.css --watch"
   },
   "author": "Stephanie Senoner",
   "license": "ISC",
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "browsersync": "0.0.1-security",
-    "bulma": "^0.7.1",
+    "bulma": "^0.7.2",
     "gulp": "^3.9.1",
-    "live-server": "^1.2.0"
+    "live-server": "^1.2.1"
   }
 }

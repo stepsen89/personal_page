@@ -1,68 +1,68 @@
-@import '_layout';
+// @import '_layout';
 
-.background {
-    position: relative;
-    padding-top: 8rem;
-    background-color: $color-primary;
+// .background {
+//     position: relative;
+//     padding-top: 8rem;
+//     background-color: $color-primary;
 
-  &__card {
-    margin: 0 auto;
-  }
+//   &__card {
+//     margin: 0 auto;
+//   }
 
-  &__card-container {
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba(#000, .1);
-    background-color: rgba(#fff, .6);
-    padding: 4rem;
+//   &__card-container {
+//     margin: 0 auto;
+//     box-shadow: 0 3rem 6rem rgba(#000, .1);
+//     background-color: rgba(#fff, .6);
+//     padding: 4rem;
     
-    @include respond(phone_landscape){
-      border-radius: .3rem;
-      width: 80%;
-      grid-template-columns: 30% 70%;
-      margin-bottom: 3rem;
-      font-size: 1rem;
-      display: grid;
-      grid-template-rows: 50% 50%;
-      align-content: center;
-    }
-  }
+//     @include respond(phone_landscape){
+//       border-radius: .3rem;
+//       width: 80%;
+//       grid-template-columns: 30% 70%;
+//       margin-bottom: 3rem;
+//       font-size: 1rem;
+//       display: grid;
+//       grid-template-rows: 50% 50%;
+//       align-content: center;
+//     }
+//   }
 
-  &__card-right {
-    display: grid;
-    grid-template-rows: 30% 70%;
-    grid-row-gap: .9rem;
+//   &__card-right {
+//     display: grid;
+//     grid-template-rows: 30% 70%;
+//     grid-row-gap: .9rem;
     
-  }
+//   }
   
-  &__card-right-container {
-    display: grid;
-    grid-template-columns: 60% 40%;
+//   &__card-right-container {
+//     display: grid;
+//     grid-template-columns: 60% 40%;
 
-    @include respond(phone_landscape) {
-      grid-template-columns: 70% 30%;
-    }
-  }
+//     @include respond(phone_landscape) {
+//       grid-template-columns: 70% 30%;
+//     }
+//   }
 
-  &__time {
-    justify-self: end;
-  }
+//   &__time {
+//     justify-self: end;
+//   }
 
-  &__description {
-    display: none;
+//   &__description {
+//     display: none;
 
-    @include respond(phone_landscape){
-      display: block;
-      text-align: justify;
-      font-size: 1.5rem;
-    }
-  }
+//     @include respond(phone_landscape){
+//       display: block;
+//       text-align: justify;
+//       font-size: 1.5rem;
+//     }
+//   }
 
-  &__location {
-    display: none;
+//   &__location {
+//     display: none;
 
-    @include respond(phone_landscape){
-      display: block;
-      font-size: 1.5rem;
-    }
-  }
-}
+//     @include respond(phone_landscape){
+//       display: block;
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
