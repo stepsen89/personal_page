@@ -13,8 +13,7 @@
   },
   "dependencies": {
     "browsersync": "0.0.1-security",
-    "bulma": "^0.7.2",
-    "gulp": "^3.9.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "uikit": "^3.0.2"
   }
 }
