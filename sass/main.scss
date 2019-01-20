@@ -1,6 +1,12 @@
 @import 'layout/_footer';
 @import 'layout/_header';
 
+@import 'components/landing';
+@import 'components/portfolio';
+@import 'components/quote_section';
+
+@import 'utils/mixins';
+@import 'utils/variables';
 *,
 *::before,
 *::after {
