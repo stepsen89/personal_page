@@ -1,12 +1,19 @@
 @import 'layout/_footer';
 @import 'layout/_header';
+@import 'layout/_background';
+@import 'layout/_navigation';
 
 @import 'components/landing';
 @import 'components/portfolio';
 @import 'components/quote_section';
+@import 'components/about';
+@import 'components/skills';
 
 @import 'utils/mixins';
 @import 'utils/variables';
+
+@import 'base/typography';
+
 *,
 *::before,
 *::after {

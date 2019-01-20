@@ -1,0 +1,78 @@
+$font-family-primary: 'Montserrat', sans-serif;
+$font-family-secondary: 'Nunito', sans-serif;
+$font-family-terciary: 'Lato', sans-serif;
+$font-family-quattro: 'Indie-Flower', cursive;
+$font-family-caveat: 'Caveat', cursive;
+$font-family-qwigley: 'Qwigley', cursive;
+$font-family-kristi: 'Kristi', cursive;
+$font-family-gochi: 'Gochi Hand', cursive;
+
+@import '../utils/mixins';
+
+%heading {
+  font-family: $font-family-caveat;
+  font-weight: 400;
+}
+
+.heading-1 {
+  line-height: 400;
+  font-family: $font-family-primary;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 2rem;
+
+
+  @include respond(desktop){
+    &::after {
+    content: "";
+    height: .1rem;
+    display: block;
+    background-color: red;
+    margin-top: .8rem;
+    }
+  }
+}
+
+.heading-2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+  position: relative;
+  margin: 2rem auto;
+  text-align: center;
+  display: table;
+  padding-bottom: 2rem;
+
+  &::after {
+    height: .3rem;
+    display: block;
+    content: "";
+    width: 17rem;
+    margin: .8rem auto 0 auto;
+    background-color: #000000;
+  }
+
+}
+
+.heading-3 {
+  font-size: 1.4rem;
+  padding-top: 1rem;
+}
+
+.heading-4 {
+  font-size: 1.6rem;
+  padding-top: 1rem;
+}
+
+.heading-5 {
+  font-size: 1.8rem;
+  
+  @include respond(desktop){
+    text-align: left;
+    padding-left: 2.4rem;
+  }
+}
+
+.heading-6 {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
