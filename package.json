@@ -4,16 +4,18 @@
   "description": "Personal Portfolio Site",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss styles/main.css --watch"
+    "css-build": "node-sass --omit-source-map-url sass/mystyle.scss css/mystyle.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
   },
   "author": "Stephanie Senoner",
   "license": "ISC",
   "devDependencies": {
+    "bulma": "^0.7.2",
     "node-sass": "^4.9.3"
   },
   "dependencies": {
     "browsersync": "0.0.1-security",
-    "live-server": "^1.2.1",
-    "uikit": "^3.0.2"
+    "live-server": "^1.2.1"
   }
 }
