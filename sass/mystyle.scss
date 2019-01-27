@@ -20,13 +20,15 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: #fff;
+$body-background-color: #ffffff;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+@import "../sass/main.scss";
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
