@@ -10,8 +10,22 @@ $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
 
+// added theme colors 
+
+$theme-one-blue: #427AA1;
+$theme-one-white: #EBF2FA;
+$theme-one-black: #070707;
+$theme-one-blue-2: #C9DAEA;
+$theme-one-purple: #331E38;
+
+$color-primary: #FFF;
+$color-primary-light: #FFE;
+$color-primary-dark: #FFD;
+
+$font-family-primary: 'Montserrat', sans-serif;
+
 // Update Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "Montserrat", sans-serif;
 $grey-dark: $brown;
 $grey-light: $beige-light;
 $primary: $purple;
