@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "browsersync": "0.0.1-security",
+    "bulma-divider": "^0.2.0",
     "live-server": "^1.2.1"
   }
 }
