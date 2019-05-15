@@ -9,6 +9,7 @@ $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$black: #83677b;
 
 // added theme colors 
 
@@ -33,6 +34,9 @@ $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 
+$footer-padding: 2rem;
+$footer-background-color: #0B0C10;
+
 // Update some of Bulma's component variables
 $body-background-color: #ffffff;
 $control-border-width: 2px;
@@ -49,5 +53,15 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/elements/form.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/layout/footer.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "_contact.scss";
+
+.is-three-quarter {
+  height: 66vh;
+}
+
+.is-one-quarter {
+  height: 34vh;
+}
