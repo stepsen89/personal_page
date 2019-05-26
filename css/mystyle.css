@@ -3341,7 +3341,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     font-size: 0.75rem; }
 
 .navbar {
-  background-color: white;
+  background-color: #F0EBD8;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -3908,7 +3908,7 @@ a.navbar-item,
   .navbar-link::after {
     display: none; }
   .navbar-menu {
-    background-color: white;
+    background-color: #F0EBD8;
     box-shadow: 0 8px 16px rgba(131, 103, 123, 0.1);
     padding: 0.5rem 0; }
     .navbar-menu.is-active {
@@ -5287,6 +5287,12 @@ a.navbar-item,
     display: flex;
     justify-content: space-between;
     width: 30rem; }
+
+body {
+  background-color: #f0ebd8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%235d6d6b' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a10101' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%2362a6b1' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%237f061d' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23008cba' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2385032f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2313598b' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23a7547e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%239291c8' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23b45298' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%239f199f' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23561a56' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
 
 .is-three-quarter {
   height: 66vh; }
