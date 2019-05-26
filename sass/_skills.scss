@@ -6,17 +6,15 @@
   background-color: #fff;
   display: grid;
   grid-template-rows: min-content min-content;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
   padding-top: 3rem;
   
   @include respond(desktop){
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
   }
 
   
   &__container {
-    width: 80%;
-    
     @include respond(desktop){
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -29,17 +27,17 @@
   &__bar {
     color: rgb(53, 19, 19);
     background-color: #f1f1f1;
-    height: 2rem;
+    height: 1rem;
     
     &-level {
       background-color:#88a6e3;
       padding: 0.4rem 0.8rem;
       text-align:center;
-      height: 2rem;
+      height: 1rem;
     } 
   }
   
   &__name {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
