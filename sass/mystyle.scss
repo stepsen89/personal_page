@@ -19,7 +19,7 @@ $theme-one-black: #070707;
 $theme-one-blue-2: #C9DAEA;
 $theme-one-purple: #331E38;
 
-$color-primary: #FFF;
+$color-primary: #F0EBD8;
 $color-primary-light: #FFE;
 $color-primary-dark: #FFD;
 
@@ -35,10 +35,11 @@ $widescreen-enabled: false;
 $fullhd-enabled: false;
 
 // Update some of Bulma's component variables
-$body-background-color: #fff;
+$body-background-color: $color-primary;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
 
 @import "../sass/main.scss";
 // Import only what you need from Bulma
@@ -54,6 +55,7 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/layout/footer.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma-divider/src/sass/index.sass";
+@import "../node_modules/bulma-timeline/src/sass/index.sass";
 @import "_contact.scss";
 
 .is-three-quarter {
