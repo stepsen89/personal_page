@@ -6,3 +6,7 @@ function navBar() {
       x.className = "header__nav";
   }
 }
+
+ScrollReveal().reveal('.firstJob')
+ScrollReveal().reveal('.secondJob', { delay: 500 })
+ScrollReveal().reveal('#punchline', { delay: 2000 })

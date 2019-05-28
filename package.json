@@ -18,6 +18,7 @@
     "browsersync": "0.0.1-security",
     "bulma-divider": "^0.2.0",
     "bulma-timeline": "^3.0.4",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "scrollreveal": "^4.0.5"
   }
 }
