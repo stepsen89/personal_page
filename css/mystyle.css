@@ -1710,7 +1710,7 @@ a.has-text-danger:hover, a.has-text-danger:focus {
     margin-right: calc(-0.375em - 2px); }
   .button:hover, .button.is-hovered {
     border-color: #D0D1CD;
-    color: #363636; }
+    color: green !important; }
   .button:focus, .button.is-focused {
     border-color: #3273dc;
     color: #363636; }
