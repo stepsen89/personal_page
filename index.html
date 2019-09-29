@@ -32,58 +32,46 @@
 </head>
 <body>
 
-    <nav class="navbar is-spaced is-fixed-top is-black" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <div class="navbar-item title">
-          STEPSEN
-        </div>
-        
-        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item" href="#About">
-            About me
-          </a>
-          
-          <a class="navbar-item">
-            Portfolio
-          </a>
-          
-          <a class="navbar-item">
-            Background
-          </a>
-
-          <a class="navbar-item">
-            Skills
-          </a>
-        </div>
+<!-- nav bar -->
+  <nav class="navbar is-spaced is-fixed-top is-white" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item title"> STEPSEN </div> 
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item active" href="#About"> About me </a>
+        <a class="navbar-item" href="#Portfolio"> Portfolio </a>
+        <a class="navbar-item" href="#Experience"> Background </a>
+        <a class="navbar-item" href="#Skills"> Skills </a>
       </div>
     </div>
   </nav>
 
+  <!-- Hero section -->
+
   <section class="hero is-fullheight is-bold">
     <div class="hero-body is-fullheight" >
       <div class="container is-fullheight">
-          <div class="title">
-            Creative . Passionate . Driven . Me
-          </div>
-          </div>
-        </section>
+        <div class="title"> Creative . Passionate . Driven . Me </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
 
         <section class="section">
           <div class="container">            
             <div class="skills__container">
               <div class="skills_left">
                 <p class="skill__name"> JavaScript </p>
-                <div class="skill__bar">
-                  <div class="skill__bar-level" style="width:95%"></div>
-                </div>
+                <progress class="progress is-small" value="85" max="100">15%</progress>
+
                 <p class="skill__name"> CSS </p>
                 <div class="skill__bar">
                   <div class="skill__bar-level" style="width:95%"></div>
@@ -282,7 +270,7 @@
         </section>
           
 
-        <section class="section has-padding">
+        <section class="section has-padding" id="Experience">
           <div class="container">
             <div class="title is-centered"> Education </div>
             <div class="timeline">

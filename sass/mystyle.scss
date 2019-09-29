@@ -9,7 +9,6 @@ $pink: #FA7C91;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
-$black: #83677b;
 
 // added theme colors 
 
@@ -39,6 +38,12 @@ $fullhd-enabled: false;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+// navbar customisation
+
+$navbar-item-hover-background-color: white !important;
+$navbar-item-active-background-color: blue !important;
+$navbar-height: 4rem;
 
 
 @import "../sass/main.scss";
