@@ -97,18 +97,11 @@ $button-hover-color: green !important;
 }
 
 .navbar.is-spaced {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   
   @include respond(desktop){
     padding: 0.5rem 10rem 0.5rem 3rem;
   }
-}
-
-.is-three-quarter {
-  height: 66vh;
-}
-
-.is-one-quarter {
-  height: 34vh;
 }
 
 .contact__icon {
@@ -118,4 +111,10 @@ $button-hover-color: green !important;
 .portfolio__img {
   width: 80%;
   height: 20rem;
+}
+
+.first-container {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
 }

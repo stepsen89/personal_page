@@ -13,9 +13,6 @@
   left: 50%;
   bottom: 70px; }
 
-.navbar.is-spaced {
-  padding: 0.5rem 10rem 0.5rem 3rem; }
-
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -4770,15 +4767,11 @@ a.navbar-item,
   border-radius: 50%;
   border: 0.2rem transparent; }
 
-@media only screen and (min-width: 75em) {
-  .navbar.is-spaced {
-    padding: 0.5rem 10rem 0.5rem 3rem; } }
-
-.is-three-quarter {
-  height: 66vh; }
-
-.is-one-quarter {
-  height: 34vh; }
+.navbar.is-spaced {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem; }
+  @media only screen and (min-width: 75em) {
+    .navbar.is-spaced {
+      padding: 0.5rem 10rem 0.5rem 3rem; } }
 
 .contact__icon {
   color: blue; }
@@ -4786,3 +4779,8 @@ a.navbar-item,
 .portfolio__img {
   width: 80%;
   height: 20rem; }
+
+.first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }

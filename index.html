@@ -57,7 +57,7 @@
 
   <section class="hero is-medium is-bold mountain-hero">
     <div class="hero-body" >
-      <div class="container">
+      <div class="container first-container">
         <div class="title"> Stephanie Senoner </div>
         <h2 class="subtitle">
           Front End Developer
@@ -66,10 +66,64 @@
     </div>
   </section>
 
+  <!-- About -->
+
+  <section class="section is-large">
+    <div class="container has-text-justified">
+      <h2 class="title has-text-link" id="About"> . About </h2>
+      <div class="columns is-mobile is-multiline has-text-justified">
+        <div class="column is-one-third-desktop has-text-centered">
+            <div class="about__image">
+                <img src="images/profilepic.jpg" alt="Profile Picture" class="personal__image">
+              </div>
+        </div>
+        <div class="column">
+          <div class="columns is-mobile">
+            <div class="column is-one-quarter is-half-mobile">
+              <p > Name: </p>
+              <p> Location: </p>
+              <p> From: </p>
+              <p> Contact: </p>
+            </div>
+            <div class="column is-half-mobile">
+              <p> Stephanie Senoner </p>
+              <p> London, UK </p>
+              <p> Innsbruck, Austria </p>
+              <p> stephanie.senoner@gmail.com </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="">
+          Currently working as a Java Service Developer at everis consultancy for British Airways. 
+          I am really passionate about web development and technology. 
+          Constantly trying to improve and learn new things by attending meet ups, 
+          participating in hackathons or teaching female students how to code. 
+          I love to think outside-the-box and solve problems as part of a team.
+          <br>
+          <br>
+          My previous background lies in psychology and business. 
+          I also attended the Digital Analytics Program at the University of British Columbia 
+          in Vancouver, which allowed me to gain a better grasp of websites in general - 
+          and more specifically, measurements of conversions and SEO, which I enjoy being 
+          part of my job. Since I am really interested in technology I recently started a part-time 
+          Master's degree in Computing and Technology here in London.      
+      </div>
+      <div class="container has-text-centered has-padding">
+        <a class="button is-medium">
+          <span class="icon">
+            <i class="fab fa-doc"></i>
+          </span>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  
   <!-- Skills -->
 
   <section class="section is-medium">
-    <div class="container">   
+    <div class="container">
       <h2 class="title has-text-link"> . Skills </h2>
       <div class="columns is-multiline is-centered has-text-centered">
         <div class="column is-one-third-tablet">
@@ -115,58 +169,6 @@
           </div>
         <!-- </div> -->
     </div>
-    </div>
-  </section>
-
-  <section class="section is-large">
-    <div class="container has-text-justified">
-      <h2 class="title has-text-link" id="About"> . About </h2>
-      <div class="columns is-mobile">
-        <div class="column is-one-third">
-            <div class="about__image">
-                <img src="images/profilepic.jpg" alt="Profile Picture" class="personal__image">
-              </div>
-        </div>
-        <div class="column">
-          <div class="columns is-mobile">
-            <div class="column is-one-quarter is-half-mobile">
-              <p > Name: </p>
-              <p> Location: </p>
-              <p> From: </p>
-              <p> Contact: </p>
-            </div>
-            <div class="column is-half-mobile">
-              <p> Stephanie Senoner </p>
-              <p> London, UK </p>
-              <p> Innsbruck, Austria </p>
-              <p> stephanie.senoner@gmail.com </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="">
-          Currently working as a Java Service Developer at everis consultancy for British Airways. 
-          I am really passionate about web development and technology. 
-          Constantly trying to improve and learn new things by attending meet ups, 
-          participating in hackathons or teaching female students how to code. 
-          I love to think outside-the-box and solve problems as part of a team.
-          <br>
-          <br>
-          My previous background lies in psychology and business. 
-          I also attended the Digital Analytics Program at the University of British Columbia 
-          in Vancouver, which allowed me to gain a better grasp of websites in general - 
-          and more specifically, measurements of conversions and SEO, which I enjoy being 
-          part of my job. Since I am really interested in technology I recently started a part-time 
-          Master's degree in Computing and Technology here in London.      
-      </div>
-      <div class="container has-text-centered has-padding">
-        <a class="button is-medium">
-          <span class="icon">
-            <i class="fab fa-doc"></i>
-          </span>
-          <span>Download CV</span>
-        </a>
-      </div>
     </div>
   </section>
     
@@ -718,6 +720,11 @@
                 <svg class="contact__icon">
                   <use xlink:href="images/icons.svg#xing-logotype"></use>
                 </svg>
+              </a>
+              <a href="/CV_Senoner Stephanie.pdf" class="header__cv" download>
+                <svg class="header__cv-icon">
+                    <use xlink:href="images/cv_icon.svg#cv"></use>
+                  </svg>
               </a>
               <p>
                 Website created by StepSen. 
