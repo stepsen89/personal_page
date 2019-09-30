@@ -49,6 +49,10 @@ $navbar-height: 4rem;
 
 $button-hover-color: green !important;
 
+.hero-body {
+  display:flex !important;
+}
+
 
 @import "../sass/main.scss";
 // Import only what you need from Bulma
@@ -56,17 +60,18 @@ $button-hover-color: green !important;
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/form.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/layout/footer.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/components/level.sass";
 @import "../node_modules/bulma-divider/src/sass/index.sass";
 @import "../node_modules/bulma-timeline/src/sass/index.sass";
 @import "_contact.scss";
+@import "_mixins.scss";
 @import "_portfolio.scss";
 @import "_skills.scss";
 
@@ -79,7 +84,9 @@ $button-hover-color: green !important;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-
+  height: 80vh;
+  display: flex;
+  align-items: center;
 }
 
 .personal__image {
@@ -90,7 +97,10 @@ $button-hover-color: green !important;
 }
 
 .navbar.is-spaced {
-  padding: 0.5rem 10rem 0.5rem 3rem;
+  
+  @include respond(desktop){
+    padding: 0.5rem 10rem 0.5rem 3rem;
+  }
 }
 
 .is-three-quarter {
