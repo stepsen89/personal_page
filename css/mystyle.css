@@ -4777,8 +4777,14 @@ a.navbar-item,
   color: blue; }
 
 .portfolio__img {
-  width: 80%;
-  height: 20rem; }
+  width: 70vw;
+  height: 12rem; }
+  @media only screen and (min-width: 37.5em) {
+    .portfolio__img {
+      width: 80%;
+      height: 20rem; } }
+  .portfolio__img-phone {
+    width: 30vw; }
 
 .first-container {
   display: flex;

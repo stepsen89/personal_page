@@ -109,8 +109,18 @@ $button-hover-color: green !important;
 }
 
 .portfolio__img {
-  width: 80%;
-  height: 20rem;
+  width: 70vw;
+  height: 12rem;
+  
+  @include respond(tab-port){
+    width: 80%;
+    height: 20rem;
+  }
+
+  &-phone {
+    width: 30vw;
+  }
+
 }
 
 .first-container {
