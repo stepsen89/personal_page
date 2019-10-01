@@ -4785,8 +4785,22 @@ a.navbar-item,
       height: 20rem; } }
   .portfolio__img-phone {
     width: 30vw; }
+    @media only screen and (min-width: 37.5em) {
+      .portfolio__img-phone {
+        width: 12vw;
+        height: 15rem; } }
 
 .first-container {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+@media only screen and (min-width: 37.5em) {
+  .has-padding-on-desktop {
+    padding-bottom: 6rem; } }
+
+.header__cv-icon {
+  fill: #31708e;
+  height: 2.6rem;
+  width: 2.6rem;
+  margin: 1rem; }

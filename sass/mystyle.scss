@@ -119,12 +119,30 @@ $button-hover-color: green !important;
 
   &-phone {
     width: 30vw;
-  }
 
+    @include respond(tab-port){
+      width: 12vw;
+      height: 15rem;
+    }
+  }
 }
 
 .first-container {
   display: flex; 
   flex-direction: column; 
   justify-content: center;
+}
+
+
+.has-padding-on-desktop {
+  @include respond(tab-port){
+    padding-bottom: 6rem;
+  }
+}
+
+.header__cv-icon {
+    fill: #31708e;
+    height: 2.6rem;
+    width: 2.6rem;
+    margin: 1rem;
 }
