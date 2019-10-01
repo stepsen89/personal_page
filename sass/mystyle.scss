@@ -133,7 +133,6 @@ $button-hover-color: green !important;
   justify-content: center;
 }
 
-
 .has-padding-on-desktop {
   @include respond(tab-port){
     padding-bottom: 6rem;
