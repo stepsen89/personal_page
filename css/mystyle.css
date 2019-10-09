@@ -3649,7 +3649,7 @@ a.navbar-item,
   .navbar-link:focus-within,
   .navbar-link:hover,
   .navbar-link.is-active {
-    background-color: white !important;
+    background-color: #285D7C !important;
     color: #31708E; }
 
 .navbar-item {
@@ -3879,9 +3879,9 @@ a.navbar-item,
     color: black; }
   a.navbar-item.is-active:not(:focus):not(:hover),
   .navbar-link.is-active:not(:focus):not(:hover) {
-    background-color: blue !important; }
+    background-color: #285D7C !important; }
   .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link, .navbar-item.has-dropdown.is-active .navbar-link {
-    background-color: white !important; } }
+    background-color: #285D7C !important; } }
 
 .hero.is-fullheight-with-navbar {
   min-height: calc(100vh - 4rem); }
