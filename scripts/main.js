@@ -1,7 +1,7 @@
-$(window).load(function() {
-  // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");;
-});
+// $(window).load(function() {
+//   // Animate loader off screen
+//   $(".se-pre-con").fadeOut("slow");
+// });
 
 function navBar() {
   var x = document.getElementById("header__nav");
@@ -11,7 +11,3 @@ function navBar() {
       x.className = "header__nav";
   }
 }
-
-ScrollReveal().reveal('.firstJob')
-ScrollReveal().reveal('.secondJob', { delay: 500 })
-ScrollReveal().reveal('#punchline', { delay: 2000 })
